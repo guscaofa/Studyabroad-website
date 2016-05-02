@@ -1,0 +1,2596 @@
+/* ANIMATION */
+/* SHADOWS */
+/* Shadows (from mdl http://www.getmdl.io/) */
+.materialkit {
+    /*           Animations              */
+    /*!
+    * Datepicker for Bootstrap
+    *
+    * Copyright 2012 Stefan Petre
+    * Licensed under the Apache License v2.0
+    * http://www.apache.org/licenses/LICENSE-2.0
+    *
+    */
+    /*
+    *
+    *   SCSS by Creative Tim
+    *   http://www.creative-tim.com
+    *
+    */ }
+.materialkit body {
+    background-color: #CCCCCC; }
+.materialkit body.inverse {
+    background: #333333;
+    color: #ffffff; }
+.materialkit body.inverse .form-control {
+    color: #ffffff; }
+.materialkit body.inverse .modal, .materialkit body.inverse .panel-default, .materialkit body.inverse .card {
+    background-color: initial;
+    color: initial; }
+.materialkit body.inverse .modal .form-control, .materialkit body.inverse .panel-default .form-control, .materialkit body.inverse .card .form-control {
+    background-color: initial;
+    color: initial; }
+.materialkit .life-of-material-kit {
+    background: #FFFFFF; }
+.materialkit body, .materialkit h1, .materialkit h2, .materialkit h3, .materialkit h4, .materialkit h5, .materialkit h6, .materialkit .h1, .materialkit .h2, .materialkit .h3, .materialkit .h4 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.5em; }
+.materialkit a {
+    color: #9c27b0; }
+.materialkit a:hover, .materialkit a:focus {
+    color: #9c27b0; }
+.materialkit a .material-icons, .materialkit a:hover .material-icons, .materialkit a:focus .material-icons {
+    vertical-align: middle; }
+.materialkit .animation-transition-general, .materialkit .carousel .carousel-indicators li {
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear; }
+.materialkit .animation-transition-slow {
+    -webkit-transition: all 370ms linear;
+    -moz-transition: all 370ms linear;
+    -o-transition: all 370ms linear;
+    -ms-transition: all 370ms linear;
+    transition: all 370ms linear; }
+.materialkit .animation-transition-fast, .materialkit .navbar {
+    -webkit-transition: all 150ms ease 0s;
+    -moz-transition: all 150ms ease 0s;
+    -o-transition: all 150ms ease 0s;
+    -ms-transition: all 150ms ease 0s;
+    transition: all 150ms ease 0s; }
+.materialkit .form-horizontal .radio, .materialkit .form-horizontal .checkbox, .materialkit .form-horizontal .radio-inline, .materialkit .form-horizontal .checkbox-inline {
+    padding-top: 0; }
+.materialkit .form-horizontal .radio {
+    margin-bottom: 10px; }
+.materialkit .form-horizontal label {
+    text-align: right; }
+.materialkit .form-horizontal label.control-label {
+    margin: 0; }
+.materialkit .btn, .materialkit .input-group-btn .btn {
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    padding: 12px 30px;
+    margin: 10px 1px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    will-change: box-shadow, transform;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    background: transparent; }
+.materialkit .btn::-moz-focus-inner, .materialkit .input-group-btn .btn::-moz-focus-inner {
+    border: 0; }
+.materialkit .btn:not(.btn-raised), .materialkit .input-group-btn .btn:not(.btn-raised) {
+    box-shadow: none; }
+.materialkit .btn:not(.btn-raised), .materialkit .input-group-btn .btn:not(.btn-raised) {
+    color: rgba(0, 0, 0, 0.87); }
+.materialkit .btn:not(.btn-raised).btn-default, .materialkit .input-group-btn .btn:not(.btn-raised).btn-default {
+    color: rgba(0, 0, 0, 0.87); }
+.materialkit .btn:not(.btn-raised).btn-inverse, .materialkit .input-group-btn .btn:not(.btn-raised).btn-inverse {
+    color: #3f51b5; }
+.materialkit .btn:not(.btn-raised).btn-primary, .materialkit .input-group-btn .btn:not(.btn-raised).btn-primary {
+    color: #9c27b0; }
+.materialkit .btn:not(.btn-raised).btn-success, .materialkit .input-group-btn .btn:not(.btn-raised).btn-success {
+    color: #4caf50; }
+.materialkit .btn:not(.btn-raised).btn-info, .materialkit .input-group-btn .btn:not(.btn-raised).btn-info {
+    color: #03a9f4; }
+.materialkit .btn:not(.btn-raised).btn-warning, .materialkit .input-group-btn .btn:not(.btn-raised).btn-warning {
+    color: #fbc02d; }
+.materialkit .btn:not(.btn-raised).btn-danger, .materialkit .input-group-btn .btn:not(.btn-raised).btn-danger {
+    color: #f44336; }
+.materialkit .btn:not(.btn-raised):not(.btn-link):hover, .materialkit .btn:not(.btn-raised):not(.btn-link):focus {
+    background-color: transparent; }
+.materialkit .input-group-btn .btn:not(.btn-raised):not(.btn-link):hover, .materialkit .input-group-btn .btn:not(.btn-raised):not(.btn-link):focus {
+    background-color: transparent; }
+.materialkit .btn:focus, .materialkit .input-group-btn .btn:focus {
+    outline: 0; }
+.materialkit .btn:active, .materialkit .input-group-btn .btn:active {
+    outline: 0; }
+.materialkit .btn:active:focus, .materialkit .input-group-btn .btn:active:focus {
+    outline: 0; }
+.materialkit .btn.btn-raised, .materialkit .btn.btn-fab {
+    background-color: #EEEEEE;
+    color: rgba(0, 0, 0, 0.87); }
+.materialkit .btn.btn-raised.btn-default, .materialkit .btn.btn-fab.btn-default {
+    background-color: #EEEEEE;
+    color: rgba(0, 0, 0, 0.87); }
+.materialkit .btn-group-raised .btn {
+    background-color: #EEEEEE;
+    color: rgba(0, 0, 0, 0.87); }
+.materialkit .btn-group-raised .btn.btn-default {
+    background-color: #EEEEEE;
+    color: rgba(0, 0, 0, 0.87); }
+.materialkit .input-group-btn .btn.btn-raised, .materialkit .input-group-btn .btn.btn-fab {
+    background-color: #EEEEEE;
+    color: rgba(0, 0, 0, 0.87); }
+.materialkit .input-group-btn .btn.btn-raised.btn-default, .materialkit .input-group-btn .btn.btn-fab.btn-default {
+    background-color: #EEEEEE;
+    color: rgba(0, 0, 0, 0.87); }
+.materialkit .btn-group-raised .input-group-btn .btn {
+    background-color: #EEEEEE;
+    color: rgba(0, 0, 0, 0.87); }
+.materialkit .btn-group-raised .input-group-btn .btn.btn-default {
+    background-color: #EEEEEE;
+    color: rgba(0, 0, 0, 0.87); }
+.materialkit .btn.btn-raised.btn-inverse, .materialkit .btn.btn-fab.btn-inverse {
+    background-color: #3f51b5;
+    color: contrast-color(#3f51b5, #000000, #ffffff); }
+.materialkit .btn-group-raised .btn.btn-inverse {
+    background-color: #3f51b5;
+    color: contrast-color(#3f51b5, #000000, #ffffff); }
+.materialkit .input-group-btn .btn.btn-raised.btn-inverse, .materialkit .input-group-btn .btn.btn-fab.btn-inverse {
+    background-color: #3f51b5;
+    color: contrast-color(#3f51b5, #000000, #ffffff); }
+.materialkit .btn-group-raised .input-group-btn .btn.btn-inverse {
+    background-color: #3f51b5;
+    color: contrast-color(#3f51b5, #000000, #ffffff); }
+.materialkit .btn.btn-raised.btn-primary, .materialkit .btn.btn-fab.btn-primary {
+    background-color: #9c27b0;
+    color: #ffffff; }
+.materialkit .btn-group-raised .btn.btn-primary {
+    background-color: #9c27b0;
+    color: #ffffff; }
+.materialkit .input-group-btn .btn.btn-raised.btn-primary, .materialkit .input-group-btn .btn.btn-fab.btn-primary {
+    background-color: #9c27b0;
+    color: #ffffff; }
+.materialkit .btn-group-raised .input-group-btn .btn.btn-primary {
+    background-color: #9c27b0;
+    color: #ffffff; }
+.materialkit .btn.btn-raised.btn-success, .materialkit .btn.btn-fab.btn-success {
+    background-color: #4caf50;
+    color: #ffffff; }
+.materialkit .btn-group-raised .btn.btn-success {
+    background-color: #4caf50;
+    color: #ffffff; }
+.materialkit .input-group-btn .btn.btn-raised.btn-success, .materialkit .input-group-btn .btn.btn-fab.btn-success {
+    background-color: #4caf50;
+    color: #ffffff; }
+.materialkit .btn-group-raised .input-group-btn .btn.btn-success {
+    background-color: #4caf50;
+    color: #ffffff; }
+.materialkit .btn.btn-raised.btn-info, .materialkit .btn.btn-fab.btn-info {
+    background-color: #03a9f4;
+    color: #ffffff; }
+.materialkit .btn-group-raised .btn.btn-info {
+    background-color: #03a9f4;
+    color: #ffffff; }
+.materialkit .input-group-btn .btn.btn-raised.btn-info, .materialkit .input-group-btn .btn.btn-fab.btn-info {
+    background-color: #03a9f4;
+    color: #ffffff; }
+.materialkit .btn-group-raised .input-group-btn .btn.btn-info {
+    background-color: #03a9f4;
+    color: #ffffff; }
+.materialkit .btn.btn-raised.btn-warning, .materialkit .btn.btn-fab.btn-warning {
+    background-color: #fbc02d;
+    color: #ffffff; }
+.materialkit .btn-group-raised .btn.btn-warning {
+    background-color: #fbc02d;
+    color: #ffffff; }
+.materialkit .input-group-btn .btn.btn-raised.btn-warning, .materialkit .input-group-btn .btn.btn-fab.btn-warning {
+    background-color: #fbc02d;
+    color: #ffffff; }
+.materialkit .btn-group-raised .input-group-btn .btn.btn-warning {
+    background-color: #fbc02d;
+    color: #ffffff; }
+.materialkit .btn.btn-raised.btn-danger, .materialkit .btn.btn-fab.btn-danger {
+    background-color: #f44336;
+    color: #ffffff; }
+.materialkit .btn-group-raised .btn.btn-danger {
+    background-color: #f44336;
+    color: #ffffff; }
+.materialkit .input-group-btn .btn.btn-raised.btn-danger, .materialkit .input-group-btn .btn.btn-fab.btn-danger {
+    background-color: #f44336;
+    color: #ffffff; }
+.materialkit .btn-group-raised .input-group-btn .btn.btn-danger {
+    background-color: #f44336;
+    color: #ffffff; }
+.materialkit .btn.btn-raised:not(.btn-link), .materialkit .btn-group-raised .btn:not(.btn-link), .materialkit .input-group-btn .btn.btn-raised:not(.btn-link), .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link) {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+.materialkit .btn.btn-raised:not(.btn-link):hover, .materialkit .btn.btn-raised:not(.btn-link):focus, .materialkit .btn.btn-raised:not(.btn-link).active, .materialkit .btn.btn-raised:not(.btn-link):active {
+    outline: 0; }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover, .materialkit .btn-group-raised .btn:not(.btn-link):focus, .materialkit .btn-group-raised .btn:not(.btn-link).active, .materialkit .btn-group-raised .btn:not(.btn-link):active {
+    outline: 0; }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):focus, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link).active, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):active {
+    outline: 0; }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):focus, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link).active, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):active {
+    outline: 0; }
+.materialkit .btn.btn-raised:not(.btn-link):hover, .materialkit .btn.btn-raised:not(.btn-link):focus, .materialkit .btn.btn-raised:not(.btn-link).active, .materialkit .btn.btn-raised:not(.btn-link):active {
+    background-color: contrast-color(#EEEEEE, #e4e4e4, #f8f8f8); }
+.materialkit .btn.btn-raised:not(.btn-link):hover.btn-default, .materialkit .btn.btn-raised:not(.btn-link):focus.btn-default, .materialkit .btn.btn-raised:not(.btn-link).active.btn-default, .materialkit .btn.btn-raised:not(.btn-link):active.btn-default {
+    background-color: contrast-color(#EEEEEE, #e4e4e4, #f8f8f8); }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover, .materialkit .btn-group-raised .btn:not(.btn-link):focus, .materialkit .btn-group-raised .btn:not(.btn-link).active, .materialkit .btn-group-raised .btn:not(.btn-link):active {
+    background-color: contrast-color(#EEEEEE, #e4e4e4, #f8f8f8); }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover.btn-default, .materialkit .btn-group-raised .btn:not(.btn-link):focus.btn-default, .materialkit .btn-group-raised .btn:not(.btn-link).active.btn-default, .materialkit .btn-group-raised .btn:not(.btn-link):active.btn-default {
+    background-color: contrast-color(#EEEEEE, #e4e4e4, #f8f8f8); }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):focus, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link).active, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):active {
+    background-color: contrast-color(#EEEEEE, #e4e4e4, #f8f8f8); }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-default, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-default, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link).active.btn-default, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):active.btn-default {
+    background-color: contrast-color(#EEEEEE, #e4e4e4, #f8f8f8); }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):focus, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link).active, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):active {
+    background-color: contrast-color(#EEEEEE, #e4e4e4, #f8f8f8); }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-default, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-default, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-default, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-default {
+    background-color: contrast-color(#EEEEEE, #e4e4e4, #f8f8f8); }
+.materialkit .btn.btn-raised:not(.btn-link):hover.btn-inverse, .materialkit .btn.btn-raised:not(.btn-link):focus.btn-inverse, .materialkit .btn.btn-raised:not(.btn-link).active.btn-inverse, .materialkit .btn.btn-raised:not(.btn-link):active.btn-inverse {
+    background-color: contrast-color(#3f51b5, #3a4aa6, #495bc0); }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover.btn-inverse, .materialkit .btn-group-raised .btn:not(.btn-link):focus.btn-inverse, .materialkit .btn-group-raised .btn:not(.btn-link).active.btn-inverse, .materialkit .btn-group-raised .btn:not(.btn-link):active.btn-inverse {
+    background-color: contrast-color(#3f51b5, #3a4aa6, #495bc0); }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-inverse, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-inverse, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link).active.btn-inverse, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):active.btn-inverse {
+    background-color: contrast-color(#3f51b5, #3a4aa6, #495bc0); }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-inverse, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-inverse, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-inverse, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-inverse {
+    background-color: contrast-color(#3f51b5, #3a4aa6, #495bc0); }
+.materialkit .btn.btn-raised:not(.btn-link):hover.btn-primary, .materialkit .btn.btn-raised:not(.btn-link):focus.btn-primary, .materialkit .btn.btn-raised:not(.btn-link).active.btn-primary, .materialkit .btn.btn-raised:not(.btn-link):active.btn-primary {
+    background-color: contrast-color(#9c27b0, #8d239f, #ab2bc1); }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover.btn-primary, .materialkit .btn-group-raised .btn:not(.btn-link):focus.btn-primary, .materialkit .btn-group-raised .btn:not(.btn-link).active.btn-primary, .materialkit .btn-group-raised .btn:not(.btn-link):active.btn-primary {
+    background-color: contrast-color(#9c27b0, #8d239f, #ab2bc1); }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-primary, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-primary, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link).active.btn-primary, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):active.btn-primary {
+    background-color: contrast-color(#9c27b0, #8d239f, #ab2bc1); }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-primary, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-primary, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-primary, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-primary {
+    background-color: contrast-color(#9c27b0, #8d239f, #ab2bc1); }
+.materialkit .btn.btn-raised:not(.btn-link):hover.btn-success, .materialkit .btn.btn-raised:not(.btn-link):focus.btn-success, .materialkit .btn.btn-raised:not(.btn-link).active.btn-success, .materialkit .btn.btn-raised:not(.btn-link):active.btn-success {
+    background-color: contrast-color(#4caf50, #46a149, #59b75c); }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover.btn-success, .materialkit .btn-group-raised .btn:not(.btn-link):focus.btn-success, .materialkit .btn-group-raised .btn:not(.btn-link).active.btn-success, .materialkit .btn-group-raised .btn:not(.btn-link):active.btn-success {
+    background-color: contrast-color(#4caf50, #46a149, #59b75c); }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-success, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-success, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link).active.btn-success, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):active.btn-success {
+    background-color: contrast-color(#4caf50, #46a149, #59b75c); }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-success, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-success, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-success, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-success {
+    background-color: contrast-color(#4caf50, #46a149, #59b75c); }
+.materialkit .btn.btn-raised:not(.btn-link):hover.btn-info, .materialkit .btn.btn-raised:not(.btn-link):focus.btn-info, .materialkit .btn.btn-raised:not(.btn-link).active.btn-info, .materialkit .btn.btn-raised:not(.btn-link):active.btn-info {
+    background-color: contrast-color(#03a9f4, #039be0, #0fb2fc); }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover.btn-info, .materialkit .btn-group-raised .btn:not(.btn-link):focus.btn-info, .materialkit .btn-group-raised .btn:not(.btn-link).active.btn-info, .materialkit .btn-group-raised .btn:not(.btn-link):active.btn-info {
+    background-color: contrast-color(#03a9f4, #039be0, #0fb2fc); }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-info, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-info, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link).active.btn-info, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):active.btn-info {
+    background-color: contrast-color(#03a9f4, #039be0, #0fb2fc); }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-info, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-info, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-info, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-info {
+    background-color: contrast-color(#03a9f4, #039be0, #0fb2fc); }
+.materialkit .btn.btn-raised:not(.btn-link):hover.btn-warning, .materialkit .btn.btn-raised:not(.btn-link):focus.btn-warning, .materialkit .btn.btn-raised:not(.btn-link).active.btn-warning, .materialkit .btn.btn-raised:not(.btn-link):active.btn-warning {
+    background-color: contrast-color(#fbc02d, #fbba19, #fbc641); }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover.btn-warning, .materialkit .btn-group-raised .btn:not(.btn-link):focus.btn-warning, .materialkit .btn-group-raised .btn:not(.btn-link).active.btn-warning, .materialkit .btn-group-raised .btn:not(.btn-link):active.btn-warning {
+    background-color: contrast-color(#fbc02d, #fbba19, #fbc641); }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-warning, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-warning, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link).active.btn-warning, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):active.btn-warning {
+    background-color: contrast-color(#fbc02d, #fbba19, #fbc641); }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-warning, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-warning, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-warning, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-warning {
+    background-color: contrast-color(#fbc02d, #fbba19, #fbc641); }
+.materialkit .btn.btn-raised:not(.btn-link):hover.btn-danger, .materialkit .btn.btn-raised:not(.btn-link):focus.btn-danger, .materialkit .btn.btn-raised:not(.btn-link).active.btn-danger, .materialkit .btn.btn-raised:not(.btn-link):active.btn-danger {
+    background-color: contrast-color(#f44336, #f33123, #f55549); }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover.btn-danger, .materialkit .btn-group-raised .btn:not(.btn-link):focus.btn-danger, .materialkit .btn-group-raised .btn:not(.btn-link).active.btn-danger, .materialkit .btn-group-raised .btn:not(.btn-link):active.btn-danger {
+    background-color: contrast-color(#f44336, #f33123, #f55549); }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-danger, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-danger, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link).active.btn-danger, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):active.btn-danger {
+    background-color: contrast-color(#f44336, #f33123, #f55549); }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover.btn-danger, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):focus.btn-danger, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link).active.btn-danger, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):active.btn-danger {
+    background-color: contrast-color(#f44336, #f33123, #f55549); }
+.materialkit .btn.btn-raised:not(.btn-link):hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .btn.btn-raised:not(.btn-link):hover:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .btn.btn-raised:not(.btn-link):hover.active, .materialkit .btn.btn-raised:not(.btn-link):hover:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .btn.btn-raised:not(.btn-link):hover.active:focus, .materialkit .btn.btn-raised:not(.btn-link):hover:active:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover.active, .materialkit .btn-group-raised .btn:not(.btn-link):hover:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .btn-group-raised .btn:not(.btn-link):hover.active:focus, .materialkit .btn-group-raised .btn:not(.btn-link):hover:active:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover.active, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover.active:focus, .materialkit .input-group-btn .btn.btn-raised:not(.btn-link):hover:active:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover.active, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover:active {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover.active:focus, .materialkit .btn-group-raised .input-group-btn .btn:not(.btn-link):hover:active:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36); }
+.materialkit .btn.btn-round, .materialkit .input-group-btn .btn.btn-round {
+    border-radius: 30px; }
+.materialkit .btn i.material-icons, .materialkit .input-group-btn .btn i.material-icons {
+    vertical-align: middle;
+    font-size: 17px;
+    top: -1px;
+    position: relative; }
+.materialkit .btn.btn-fab, .materialkit .input-group-btn .btn.btn-fab {
+    border-radius: 50%;
+    font-size: 24px;
+    height: 56px;
+    margin: auto;
+    min-width: 56px;
+    width: 56px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+    position: relative;
+    line-height: normal; }
+.materialkit .btn.btn-fab .ripple-container, .materialkit .input-group-btn .btn.btn-fab .ripple-container {
+    border-radius: 50%; }
+.materialkit .btn.btn-fab.btn-fab-mini, .materialkit .btn-group-sm .btn.btn-fab, .materialkit .input-group-btn .btn.btn-fab.btn-fab-mini, .materialkit .btn-group-sm .input-group-btn .btn.btn-fab {
+    height: 40px;
+    min-width: 40px;
+    width: 40px; }
+.materialkit .btn.btn-fab.btn-fab-mini.material-icons, .materialkit .btn-group-sm .btn.btn-fab.material-icons, .materialkit .input-group-btn .btn.btn-fab.btn-fab-mini.material-icons, .materialkit .btn-group-sm .input-group-btn .btn.btn-fab.material-icons {
+    top: -3.5px;
+    left: -3.5px; }
+.materialkit .btn.btn-fab.btn-fab-mini .material-icons, .materialkit .btn-group-sm .btn.btn-fab .material-icons, .materialkit .input-group-btn .btn.btn-fab.btn-fab-mini .material-icons, .materialkit .btn-group-sm .input-group-btn .btn.btn-fab .material-icons {
+    font-size: 17px; }
+.materialkit .btn.btn-fab i.material-icons, .materialkit .input-group-btn .btn.btn-fab i.material-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-12px, -12px);
+    line-height: 24px;
+    width: 24px;
+    font-size: 24px; }
+.materialkit .btn.btn-lg, .materialkit .btn-group-lg .btn, .materialkit .input-group-btn .btn.btn-lg, .materialkit .btn-group-lg .input-group-btn .btn {
+    font-size: 14px;
+    padding: 18px 36px; }
+.materialkit .btn.btn-sm, .materialkit .btn-group-sm .btn, .materialkit .input-group-btn .btn.btn-sm, .materialkit .btn-group-sm .input-group-btn .btn {
+    padding: 5px 20px;
+    font-size: 11px; }
+.materialkit .btn.btn-xs, .materialkit .btn-group-xs .btn, .materialkit .input-group-btn .btn.btn-xs, .materialkit .btn-group-xs .input-group-btn .btn {
+    padding: 4px 15px;
+    font-size: 10px; }
+.materialkit .btn-just-icon {
+    font-size: 20px;
+    padding: 6px 11px; }
+.materialkit fieldset[disabled][disabled] .btn {
+    color: rgba(0, 0, 0, 0.26);
+    background: transparent; }
+.materialkit .btn.disabled, .materialkit .btn:disabled, .materialkit .btn[disabled][disabled] {
+    color: rgba(0, 0, 0, 0.26);
+    background: transparent; }
+.materialkit fieldset[disabled][disabled] .input-group-btn .btn {
+    color: rgba(0, 0, 0, 0.26);
+    background: transparent; }
+.materialkit .input-group-btn .btn.disabled, .materialkit .input-group-btn .btn:disabled, .materialkit .input-group-btn .btn[disabled][disabled] {
+    color: rgba(0, 0, 0, 0.26);
+    background: transparent; }
+.materialkit fieldset[disabled][disabled] .btn-group {
+    color: rgba(0, 0, 0, 0.26);
+    background: transparent; }
+.materialkit .btn-group.disabled, .materialkit .btn-group:disabled, .materialkit .btn-group[disabled][disabled] {
+    color: rgba(0, 0, 0, 0.26);
+    background: transparent; }
+.materialkit fieldset[disabled][disabled] .btn-group-vertical {
+    color: rgba(0, 0, 0, 0.26);
+    background: transparent; }
+.materialkit .btn-group-vertical.disabled, .materialkit .btn-group-vertical:disabled, .materialkit .btn-group-vertical[disabled][disabled] {
+    color: rgba(0, 0, 0, 0.26);
+    background: transparent; }
+.materialkit .theme-dark fieldset[disabled][disabled] .btn {
+    color: rgba(255, 255, 255, 0.3); }
+.materialkit .theme-dark .btn.disabled, .materialkit .theme-dark .btn:disabled, .materialkit .theme-dark .btn[disabled][disabled] {
+    color: rgba(255, 255, 255, 0.3); }
+.materialkit .theme-dark fieldset[disabled][disabled] .input-group-btn .btn {
+    color: rgba(255, 255, 255, 0.3); }
+.materialkit .theme-dark .input-group-btn .btn.disabled, .materialkit .theme-dark .input-group-btn .btn:disabled, .materialkit .theme-dark .input-group-btn .btn[disabled][disabled] {
+    color: rgba(255, 255, 255, 0.3); }
+.materialkit .theme-dark fieldset[disabled][disabled] .btn-group {
+    color: rgba(255, 255, 255, 0.3); }
+.materialkit .theme-dark .btn-group.disabled, .materialkit .theme-dark .btn-group:disabled, .materialkit .theme-dark .btn-group[disabled][disabled] {
+    color: rgba(255, 255, 255, 0.3); }
+.materialkit .theme-dark fieldset[disabled][disabled] .btn-group-vertical {
+    color: rgba(255, 255, 255, 0.3); }
+.materialkit .theme-dark .btn-group-vertical.disabled, .materialkit .theme-dark .btn-group-vertical:disabled, .materialkit .theme-dark .btn-group-vertical[disabled][disabled] {
+    color: rgba(255, 255, 255, 0.3); }
+.materialkit fieldset[disabled][disabled] .btn.btn-raised {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .btn.btn-raised.active, .materialkit fieldset[disabled][disabled] .btn.btn-raised:active, .materialkit fieldset[disabled][disabled] .btn.btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .btn.btn-group-raised {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .btn.btn-group-raised.active, .materialkit fieldset[disabled][disabled] .btn.btn-group-raised:active, .materialkit fieldset[disabled][disabled] .btn.btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn.disabled.btn-raised {
+    box-shadow: none; }
+.materialkit .btn.disabled.btn-raised.active, .materialkit .btn.disabled.btn-raised:active, .materialkit .btn.disabled.btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn.disabled.btn-group-raised {
+    box-shadow: none; }
+.materialkit .btn.disabled.btn-group-raised.active, .materialkit .btn.disabled.btn-group-raised:active, .materialkit .btn.disabled.btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn:disabled.btn-raised {
+    box-shadow: none; }
+.materialkit .btn:disabled.btn-raised.active, .materialkit .btn:disabled.btn-raised:active, .materialkit .btn:disabled.btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn:disabled.btn-group-raised {
+    box-shadow: none; }
+.materialkit .btn:disabled.btn-group-raised.active, .materialkit .btn:disabled.btn-group-raised:active, .materialkit .btn:disabled.btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn[disabled][disabled].btn-raised {
+    box-shadow: none; }
+.materialkit .btn[disabled][disabled].btn-raised.active, .materialkit .btn[disabled][disabled].btn-raised:active, .materialkit .btn[disabled][disabled].btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn[disabled][disabled].btn-group-raised {
+    box-shadow: none; }
+.materialkit .btn[disabled][disabled].btn-group-raised.active, .materialkit .btn[disabled][disabled].btn-group-raised:active, .materialkit .btn[disabled][disabled].btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .input-group-btn .btn.btn-raised {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .input-group-btn .btn.btn-raised.active, .materialkit fieldset[disabled][disabled] .input-group-btn .btn.btn-raised:active, .materialkit fieldset[disabled][disabled] .input-group-btn .btn.btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .input-group-btn .btn.btn-group-raised {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .input-group-btn .btn.btn-group-raised.active, .materialkit fieldset[disabled][disabled] .input-group-btn .btn.btn-group-raised:active, .materialkit fieldset[disabled][disabled] .input-group-btn .btn.btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .input-group-btn .btn.disabled.btn-raised {
+    box-shadow: none; }
+.materialkit .input-group-btn .btn.disabled.btn-raised.active, .materialkit .input-group-btn .btn.disabled.btn-raised:active, .materialkit .input-group-btn .btn.disabled.btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .input-group-btn .btn.disabled.btn-group-raised {
+    box-shadow: none; }
+.materialkit .input-group-btn .btn.disabled.btn-group-raised.active, .materialkit .input-group-btn .btn.disabled.btn-group-raised:active, .materialkit .input-group-btn .btn.disabled.btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .input-group-btn .btn:disabled.btn-raised {
+    box-shadow: none; }
+.materialkit .input-group-btn .btn:disabled.btn-raised.active, .materialkit .input-group-btn .btn:disabled.btn-raised:active, .materialkit .input-group-btn .btn:disabled.btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .input-group-btn .btn:disabled.btn-group-raised {
+    box-shadow: none; }
+.materialkit .input-group-btn .btn:disabled.btn-group-raised.active, .materialkit .input-group-btn .btn:disabled.btn-group-raised:active, .materialkit .input-group-btn .btn:disabled.btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .input-group-btn .btn[disabled][disabled].btn-raised {
+    box-shadow: none; }
+.materialkit .input-group-btn .btn[disabled][disabled].btn-raised.active, .materialkit .input-group-btn .btn[disabled][disabled].btn-raised:active, .materialkit .input-group-btn .btn[disabled][disabled].btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .input-group-btn .btn[disabled][disabled].btn-group-raised {
+    box-shadow: none; }
+.materialkit .input-group-btn .btn[disabled][disabled].btn-group-raised.active, .materialkit .input-group-btn .btn[disabled][disabled].btn-group-raised:active, .materialkit .input-group-btn .btn[disabled][disabled].btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .btn-group.btn-raised {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .btn-group.btn-raised.active, .materialkit fieldset[disabled][disabled] .btn-group.btn-raised:active, .materialkit fieldset[disabled][disabled] .btn-group.btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .btn-group.btn-group-raised {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .btn-group.btn-group-raised.active, .materialkit fieldset[disabled][disabled] .btn-group.btn-group-raised:active, .materialkit fieldset[disabled][disabled] .btn-group.btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group.disabled.btn-raised {
+    box-shadow: none; }
+.materialkit .btn-group.disabled.btn-raised.active, .materialkit .btn-group.disabled.btn-raised:active, .materialkit .btn-group.disabled.btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group.disabled.btn-group-raised {
+    box-shadow: none; }
+.materialkit .btn-group.disabled.btn-group-raised.active, .materialkit .btn-group.disabled.btn-group-raised:active, .materialkit .btn-group.disabled.btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group:disabled.btn-raised {
+    box-shadow: none; }
+.materialkit .btn-group:disabled.btn-raised.active, .materialkit .btn-group:disabled.btn-raised:active, .materialkit .btn-group:disabled.btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group:disabled.btn-group-raised {
+    box-shadow: none; }
+.materialkit .btn-group:disabled.btn-group-raised.active, .materialkit .btn-group:disabled.btn-group-raised:active, .materialkit .btn-group:disabled.btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group[disabled][disabled].btn-raised {
+    box-shadow: none; }
+.materialkit .btn-group[disabled][disabled].btn-raised.active, .materialkit .btn-group[disabled][disabled].btn-raised:active, .materialkit .btn-group[disabled][disabled].btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group[disabled][disabled].btn-group-raised {
+    box-shadow: none; }
+.materialkit .btn-group[disabled][disabled].btn-group-raised.active, .materialkit .btn-group[disabled][disabled].btn-group-raised:active, .materialkit .btn-group[disabled][disabled].btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .btn-group-vertical.btn-raised {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .btn-group-vertical.btn-raised.active, .materialkit fieldset[disabled][disabled] .btn-group-vertical.btn-raised:active, .materialkit fieldset[disabled][disabled] .btn-group-vertical.btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .btn-group-vertical.btn-group-raised {
+    box-shadow: none; }
+.materialkit fieldset[disabled][disabled] .btn-group-vertical.btn-group-raised.active, .materialkit fieldset[disabled][disabled] .btn-group-vertical.btn-group-raised:active, .materialkit fieldset[disabled][disabled] .btn-group-vertical.btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group-vertical.disabled.btn-raised {
+    box-shadow: none; }
+.materialkit .btn-group-vertical.disabled.btn-raised.active, .materialkit .btn-group-vertical.disabled.btn-raised:active, .materialkit .btn-group-vertical.disabled.btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group-vertical.disabled.btn-group-raised {
+    box-shadow: none; }
+.materialkit .btn-group-vertical.disabled.btn-group-raised.active, .materialkit .btn-group-vertical.disabled.btn-group-raised:active, .materialkit .btn-group-vertical.disabled.btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group-vertical:disabled.btn-raised {
+    box-shadow: none; }
+.materialkit .btn-group-vertical:disabled.btn-raised.active, .materialkit .btn-group-vertical:disabled.btn-raised:active, .materialkit .btn-group-vertical:disabled.btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group-vertical:disabled.btn-group-raised {
+    box-shadow: none; }
+.materialkit .btn-group-vertical:disabled.btn-group-raised.active, .materialkit .btn-group-vertical:disabled.btn-group-raised:active, .materialkit .btn-group-vertical:disabled.btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group-vertical[disabled][disabled].btn-raised {
+    box-shadow: none; }
+.materialkit .btn-group-vertical[disabled][disabled].btn-raised.active, .materialkit .btn-group-vertical[disabled][disabled].btn-raised:active, .materialkit .btn-group-vertical[disabled][disabled].btn-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group-vertical[disabled][disabled].btn-group-raised {
+    box-shadow: none; }
+.materialkit .btn-group-vertical[disabled][disabled].btn-group-raised.active, .materialkit .btn-group-vertical[disabled][disabled].btn-group-raised:active, .materialkit .btn-group-vertical[disabled][disabled].btn-group-raised:focus:not(:active) {
+    box-shadow: none; }
+.materialkit .btn-group, .materialkit .btn-group-vertical {
+    position: relative;
+    margin: 10px 1px; }
+.materialkit .btn-group.open > .dropdown-toggle.btn, .materialkit .btn-group-vertical.open > .dropdown-toggle.btn {
+    background-color: #EEEEEE; }
+.materialkit .btn-group.open > .dropdown-toggle.btn.btn-default, .materialkit .btn-group-vertical.open > .dropdown-toggle.btn.btn-default {
+    background-color: #EEEEEE; }
+.materialkit .btn-group.open > .dropdown-toggle.btn.btn-inverse, .materialkit .btn-group-vertical.open > .dropdown-toggle.btn.btn-inverse {
+    background-color: #3f51b5; }
+.materialkit .btn-group.open > .dropdown-toggle.btn.btn-primary, .materialkit .btn-group-vertical.open > .dropdown-toggle.btn.btn-primary {
+    background-color: #9c27b0; }
+.materialkit .btn-group.open > .dropdown-toggle.btn.btn-success, .materialkit .btn-group-vertical.open > .dropdown-toggle.btn.btn-success {
+    background-color: #4caf50; }
+.materialkit .btn-group.open > .dropdown-toggle.btn.btn-info, .materialkit .btn-group-vertical.open > .dropdown-toggle.btn.btn-info {
+    background-color: #03a9f4; }
+.materialkit .btn-group.open > .dropdown-toggle.btn.btn-warning, .materialkit .btn-group-vertical.open > .dropdown-toggle.btn.btn-warning {
+    background-color: #fbc02d; }
+.materialkit .btn-group.open > .dropdown-toggle.btn.btn-danger, .materialkit .btn-group-vertical.open > .dropdown-toggle.btn.btn-danger {
+    background-color: #f44336; }
+.materialkit .btn-group .dropdown-menu, .materialkit .btn-group-vertical .dropdown-menu {
+    border-radius: 0 0 3px 3px; }
+.materialkit .btn-group.btn-group-raised, .materialkit .btn-group-vertical.btn-group-raised {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+.materialkit .btn-group .btn {
+    margin: 0; }
+.materialkit .btn-group .btn + .btn, .materialkit .btn-group .btn:active {
+    margin: 0; }
+.materialkit .btn-group .btn-group {
+    margin: 0; }
+.materialkit .btn-group-vertical .btn {
+    margin: 0; }
+.materialkit .btn-group-vertical .btn + .btn, .materialkit .btn-group-vertical .btn:active {
+    margin: 0; }
+.materialkit .btn-group-vertical .btn-group {
+    margin: 0; }
+.materialkit .close {
+    font-size: inherit;
+    color: #FFFFFF;
+    opacity: .9;
+    text-shadow: none; }
+.materialkit .close:hover, .materialkit .close:focus {
+    opacity: 1;
+    color: #FFFFFF; }
+.materialkit .close i {
+    font-size: 20px; }
+.materialkit .checkbox label {
+    cursor: pointer;
+    padding-left: 0;
+    color: rgba(0, 0, 0, 0.26); }
+.materialkit .form-group.is-focused .checkbox label {
+    color: rgba(0, 0, 0, 0.26); }
+.materialkit .form-group.is-focused .checkbox label:hover, .materialkit .form-group.is-focused .checkbox label:focus {
+    color: rgba(0, 0, 0, 0.54); }
+.materialkit fieldset[disabled] .form-group.is-focused .checkbox label {
+    color: rgba(0, 0, 0, 0.26); }
+.materialkit .checkbox input[type=checkbox] {
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    left: 0;
+    pointer-events: none; }
+.materialkit .checkbox .checkbox-material {
+    vertical-align: middle;
+    position: relative;
+    top: 3px;
+    padding-right: 5px; }
+.materialkit .checkbox .checkbox-material:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.84);
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    z-index: 1;
+    opacity: 0;
+    margin: 0;
+    transform: scale3d(2.3, 2.3, 1); }
+.materialkit .checkbox .checkbox-material .check {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 3px; }
+.materialkit .checkbox .checkbox-material .check:before {
+    position: absolute;
+    content: "";
+    transform: rotate(45deg);
+    display: block;
+    margin-top: -3px;
+    margin-left: 7px;
+    width: 0;
+    height: 0;
+    background: red;
+    box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
+    animation: checkbox-off 0.3s forwards; }
+.materialkit .checkbox input[type=checkbox]:focus + .checkbox-material .check:after {
+    opacity: 0.2; }
+.materialkit .checkbox input[type=checkbox]:checked + .checkbox-material .check {
+    background: #9c27b0; }
+.materialkit .checkbox input[type=checkbox]:checked + .checkbox-material .check:before {
+    color: #FFFFFF;
+    box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+    animation: checkbox-on 0.3s forwards; }
+.materialkit .checkbox input[type=checkbox]:checked + .checkbox-material:before {
+    animation: rippleOn 500ms; }
+.materialkit .checkbox input[type=checkbox]:checked + .checkbox-material .check:after {
+    animation: rippleOn 500ms forwards; }
+.materialkit .checkbox input[type=checkbox]:not(:checked) + .checkbox-material:before, .materialkit .checkbox input[type=checkbox]:not(:checked) + .checkbox-material .check:after {
+    animation: rippleOff 500ms; }
+.materialkit fieldset[disabled] .checkbox {
+    opacity: 0.5; }
+.materialkit fieldset[disabled] .checkbox input[type=checkbox] {
+    opacity: 0.5; }
+.materialkit .checkbox input[type=checkbox][disabled] ~ .checkbox-material .check, .materialkit .checkbox input[type=checkbox][disabled] + .circle {
+    opacity: 0.5; }
+.materialkit .checkbox input[type=checkbox][disabled] ~ .checkbox-material .check {
+    border-color: #000000;
+    opacity: .26; }
+.materialkit .checkbox input[type=checkbox][disabled] + .checkbox-material .check:after {
+    background-color: rgba(0, 0, 0, 0.87);
+    transform: rotate(-45deg); }
+@keyframes checkbox-on {
+    0% {
+        box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 15px 2px 0 11px; }
+    50% {
+        box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px 2px 0 11px; }
+    100% {
+        box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px; } }
+@keyframes rippleOn {
+    0% {
+        opacity: 0; }
+    50% {
+        opacity: 0.2; }
+    100% {
+        opacity: 0; } }
+@keyframes rippleOff {
+    0% {
+        opacity: 0; }
+    50% {
+        opacity: 0.2; }
+    100% {
+        opacity: 0; } }
+.materialkit .togglebutton {
+    vertical-align: middle;
+    user-select: none; }
+.materialkit .togglebutton label, .materialkit .togglebutton input, .materialkit .togglebutton .toggle {
+    user-select: none; }
+.materialkit .togglebutton label {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.26); }
+.materialkit .form-group.is-focused .togglebutton label {
+    color: rgba(0, 0, 0, 0.26); }
+.materialkit .form-group.is-focused .togglebutton label:hover, .materialkit .form-group.is-focused .togglebutton label:focus {
+    color: rgba(0, 0, 0, 0.54); }
+.materialkit fieldset[disabled] .form-group.is-focused .togglebutton label {
+    color: rgba(0, 0, 0, 0.26); }
+.materialkit .togglebutton label input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+.materialkit .togglebutton label .toggle {
+    text-align: left;
+    margin-left: 5px;
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    background-color: rgba(80, 80, 80, 0.7);
+    border-radius: 15px;
+    margin-right: 15px;
+    transition: background 0.3s ease;
+    vertical-align: middle; }
+.materialkit .togglebutton label input[type=checkbox][disabled] + .toggle {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    background-color: rgba(80, 80, 80, 0.7);
+    border-radius: 15px;
+    margin-right: 15px;
+    transition: background 0.3s ease;
+    vertical-align: middle; }
+.materialkit .togglebutton label .toggle:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+    left: -5px;
+    top: -3px;
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease; }
+.materialkit .togglebutton label input[type=checkbox][disabled] + .toggle:after, .materialkit .togglebutton label input[type=checkbox][disabled]:checked + .toggle:after {
+    background-color: #BDBDBD; }
+.materialkit .togglebutton label input[type=checkbox][disabled] + .toggle:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.1); }
+.materialkit .togglebutton label input[type=checkbox] + .toggle:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.1); }
+.materialkit .togglebutton label input[type=checkbox]:checked + .toggle {
+    background-color: rgba(156, 39, 176, 0.7); }
+.materialkit .togglebutton label input[type=checkbox]:checked + .toggle:after {
+    left: 15px;
+    border-color: #9c27b0; }
+.materialkit .togglebutton label input[type=checkbox]:checked + .toggle:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(156, 39, 176, 0.1); }
+.materialkit .radio label {
+    cursor: pointer;
+    padding-left: 35px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.26); }
+.materialkit .form-group.is-focused .radio label {
+    color: rgba(0, 0, 0, 0.26); }
+.materialkit .form-group.is-focused .radio label:hover, .materialkit .form-group.is-focused .radio label:focus {
+    color: rgba(0, 0, 0, 0.54); }
+.materialkit fieldset[disabled] .form-group.is-focused .radio label {
+    color: rgba(0, 0, 0, 0.26); }
+.materialkit .radio label span {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    transition-duration: 0.2s; }
+.materialkit .radio label .circle {
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    height: 15px;
+    width: 15px;
+    border-radius: 100%; }
+.materialkit .radio label .check {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: #9c27b0;
+    transform: scale3d(0, 0, 0); }
+.materialkit .radio label .check:after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.87);
+    left: -18px;
+    top: -18px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    z-index: 1;
+    opacity: 0;
+    margin: 0;
+    transform: scale3d(1.5, 1.5, 1); }
+.materialkit .radio label input[type=radio]:not(:checked) ~ .check:after {
+    animation: rippleOff 500ms; }
+.materialkit .radio label input[type=radio]:checked ~ .check:after {
+    animation: rippleOn 500ms; }
+.materialkit .radio input[type=radio] {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden; }
+.materialkit .radio input[type=radio]:checked ~ .check, .materialkit .radio input[type=radio]:checked ~ .circle {
+    opacity: 1; }
+.materialkit .radio input[type=radio]:checked ~ .check {
+    background-color: #9c27b0; }
+.materialkit .radio input[type=radio]:checked ~ .circle {
+    border-color: #9c27b0; }
+.materialkit .radio input[type=radio]:checked ~ .check {
+    transform: scale3d(0.65, 0.65, 1); }
+.materialkit .radio input[type=radio][disabled] ~ .check, .materialkit .radio input[type=radio][disabled] ~ .circle {
+    opacity: 0.26; }
+.materialkit .radio input[type=radio][disabled] ~ .check {
+    background-color: #000000; }
+.materialkit .radio input[type=radio][disabled] ~ .circle {
+    border-color: #000000; }
+@keyframes rippleOn {
+    0% {
+        opacity: 0; }
+    50% {
+        opacity: 0.2; }
+    100% {
+        opacity: 0; } }
+@keyframes rippleOff {
+    0% {
+        opacity: 0; }
+    50% {
+        opacity: 0.2; }
+    100% {
+        opacity: 0; } }
+.materialkit legend {
+    margin-bottom: 20px;
+    font-size: 21px; }
+.materialkit output {
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 1.42857; }
+.materialkit .form-control {
+    height: 36px;
+    padding: 7px 0;
+    font-size: 14px;
+    line-height: 1.42857; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .materialkit input[type="date"].form-control, .materialkit input[type="time"].form-control, .materialkit input[type="datetime-local"].form-control, .materialkit input[type="month"].form-control {
+        line-height: 36px; }
+    .materialkit input[type="date"].input-sm {
+        line-height: 24px; }
+    .materialkit .input-group-sm input[type="date"], .materialkit input[type="time"].input-sm, .materialkit .input-group-sm input[type="time"], .materialkit input[type="datetime-local"].input-sm, .materialkit .input-group-sm input[type="datetime-local"], .materialkit input[type="month"].input-sm, .materialkit .input-group-sm input[type="month"] {
+        line-height: 24px; }
+    .materialkit input[type="date"].input-lg, .materialkit .input-group-lg input[type="date"], .materialkit input[type="time"].input-lg, .materialkit .input-group-lg input[type="time"], .materialkit input[type="datetime-local"].input-lg, .materialkit .input-group-lg input[type="datetime-local"], .materialkit input[type="month"].input-lg, .materialkit .input-group-lg input[type="month"] {
+        line-height: 44px; } }
+.materialkit .radio label, .materialkit .checkbox label {
+    min-height: 20px; }
+.materialkit .form-control-static {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 34px; }
+.materialkit .input-sm .input-sm {
+    height: 24px;
+    padding: 3px 0;
+    font-size: 11px;
+    line-height: 1.5;
+    border-radius: 0; }
+.materialkit .input-sm select.input-sm {
+    height: 24px;
+    line-height: 24px; }
+.materialkit .input-sm textarea.input-sm, .materialkit .input-sm select[multiple].input-sm {
+    height: auto; }
+.materialkit .form-group-sm .form-control {
+    height: 24px;
+    padding: 3px 0;
+    font-size: 11px;
+    line-height: 1.5; }
+.materialkit .form-group-sm select.form-control {
+    height: 24px;
+    line-height: 24px; }
+.materialkit .form-group-sm textarea.form-control, .materialkit .form-group-sm select[multiple].form-control {
+    height: auto; }
+.materialkit .form-group-sm .form-control-static {
+    height: 24px;
+    min-height: 31px;
+    padding: 4px 0;
+    font-size: 11px;
+    line-height: 1.5; }
+.materialkit .input-lg .input-lg {
+    height: 44px;
+    padding: 9px 0;
+    font-size: 18px;
+    line-height: 1.33333;
+    border-radius: 0; }
+.materialkit .input-lg select.input-lg {
+    height: 44px;
+    line-height: 44px; }
+.materialkit .input-lg textarea.input-lg, .materialkit .input-lg select[multiple].input-lg {
+    height: auto; }
+.materialkit .form-group-lg .form-control {
+    height: 44px;
+    padding: 9px 0;
+    font-size: 18px;
+    line-height: 1.33333; }
+.materialkit .form-group-lg select.form-control {
+    height: 44px;
+    line-height: 44px; }
+.materialkit .form-group-lg textarea.form-control, .materialkit .form-group-lg select[multiple].form-control {
+    height: auto; }
+.materialkit .form-group-lg .form-control-static {
+    height: 44px;
+    min-height: 38px;
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 1.33333; }
+.materialkit .form-horizontal .radio, .materialkit .form-horizontal .checkbox, .materialkit .form-horizontal .radio-inline, .materialkit .form-horizontal .checkbox-inline {
+    padding-top: 8px; }
+.materialkit .form-horizontal .radio, .materialkit .form-horizontal .checkbox {
+    min-height: 28px; }
+@media (min-width: 768px) {
+    .materialkit .form-horizontal .control-label {
+        padding-top: 8px; } }
+@media (min-width: 768px) {
+    .materialkit .form-horizontal .form-group-lg .control-label {
+        padding-top: 13.0px;
+        font-size: 18px; } }
+@media (min-width: 768px) {
+    .materialkit .form-horizontal .form-group-sm .control-label {
+        padding-top: 4px;
+        font-size: 11px; } }
+.materialkit .label {
+    border-radius: 2px;
+    background-color: #9e9e9e; }
+.materialkit .label.label-default {
+    background-color: #9e9e9e; }
+.materialkit .label.label-inverse {
+    background-color: #3f51b5; }
+.materialkit .label.label-primary {
+    background-color: #9c27b0; }
+.materialkit .label.label-success {
+    background-color: #4caf50; }
+.materialkit .label.label-info {
+    background-color: #03a9f4; }
+.materialkit .label.label-warning {
+    background-color: #fbc02d; }
+.materialkit .label.label-danger {
+    background-color: #f44336; }
+.materialkit .form-control, .materialkit .form-group .form-control {
+    border: 0;
+    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+    background-size: 0 2px, 100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom, center calc(100% - 1px);
+    background-color: transparent;
+    transition: background 0s ease-out;
+    float: none;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 400; }
+.materialkit .form-control::-moz-placeholder, .materialkit .form-group .form-control::-moz-placeholder, .materialkit .form-control:-ms-input-placeholder, .materialkit .form-group .form-control:-ms-input-placeholder, .materialkit .form-control::-webkit-input-placeholder, .materialkit .form-group .form-control::-webkit-input-placeholder {
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit .form-control[readonly], .materialkit .form-control[disabled] {
+    background-color: transparent; }
+.materialkit fieldset[disabled] .form-control {
+    background-color: transparent; }
+.materialkit .form-group .form-control[readonly], .materialkit .form-group .form-control[disabled] {
+    background-color: transparent; }
+.materialkit fieldset[disabled] .form-group .form-control {
+    background-color: transparent; }
+.materialkit .form-control[disabled], .materialkit fieldset[disabled] .form-control, .materialkit .form-group .form-control[disabled], .materialkit fieldset[disabled] .form-group .form-control {
+    background-image: none;
+    border-bottom: 1px dotted #D2D2D2; }
+.materialkit .form-group {
+    position: relative; }
+.materialkit .form-group.label-static label.control-label, .materialkit .form-group.label-placeholder label.control-label {
+    position: absolute;
+    pointer-events: none;
+    transition: 0.3s ease all; }
+.materialkit .form-group.label-floating label.control-label {
+    position: absolute;
+    pointer-events: none;
+    transition: 0.3s ease all;
+    will-change: left, top, contents; }
+.materialkit .form-group.label-placeholder:not(.is-empty) label.control-label {
+    display: none; }
+.materialkit .form-group .help-block {
+    position: absolute;
+    display: none; }
+.materialkit .form-group.is-focused .form-control {
+    outline: none;
+    background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+    background-size: 100% 2px, 100% 1px;
+    box-shadow: none;
+    transition-duration: 0.3s; }
+.materialkit .form-group.is-focused .form-control .material-input:after {
+    background-color: #9c27b0; }
+.materialkit .form-group.is-focused label {
+    color: #9c27b0; }
+.materialkit .form-group.is-focused label.control-label {
+    color: #9c27b0; }
+.materialkit .form-group.is-focused.label-placeholder label {
+    color: #AAAAAA; }
+.materialkit .form-group.is-focused.label-placeholder label.control-label {
+    color: #AAAAAA; }
+.materialkit .form-group.is-focused .help-block {
+    display: block; }
+.materialkit .form-group.has-warning .form-control {
+    box-shadow: none; }
+.materialkit .form-group.has-warning.is-focused .form-control {
+    background-image: linear-gradient(#fbc02d, #fbc02d), linear-gradient(#D2D2D2, #D2D2D2); }
+.materialkit .form-group.has-warning label.control-label, .materialkit .form-group.has-warning .help-block {
+    color: #fbc02d; }
+.materialkit .form-group.has-error .form-control {
+    box-shadow: none; }
+.materialkit .form-group.has-error.is-focused .form-control {
+    background-image: linear-gradient(#f44336, #f44336), linear-gradient(#D2D2D2, #D2D2D2); }
+.materialkit .form-group.has-error label.control-label, .materialkit .form-group.has-error .help-block {
+    color: #f44336; }
+.materialkit .form-group.has-success .form-control {
+    box-shadow: none; }
+.materialkit .form-group.has-success.is-focused .form-control {
+    background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#D2D2D2, #D2D2D2); }
+.materialkit .form-group.has-success label.control-label, .materialkit .form-group.has-success .help-block {
+    color: #4caf50; }
+.materialkit .form-group.has-info .form-control {
+    box-shadow: none; }
+.materialkit .form-group.has-info.is-focused .form-control {
+    background-image: linear-gradient(#03a9f4, #03a9f4), linear-gradient(#D2D2D2, #D2D2D2); }
+.materialkit .form-group.has-info label.control-label, .materialkit .form-group.has-info .help-block {
+    color: #03a9f4; }
+.materialkit .form-group textarea {
+    resize: none; }
+.materialkit .form-group textarea ~ .form-control-highlight {
+    margin-top: -11px; }
+.materialkit .form-group select {
+    appearance: none; }
+.materialkit .form-group select ~ .material-input:after {
+    display: none; }
+.materialkit .form-control {
+    margin-bottom: 7px; }
+.materialkit .form-control::-moz-placeholder, .materialkit .form-control:-ms-input-placeholder, .materialkit .form-control::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit .checkbox label, .materialkit .radio label {
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit label {
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit label.control-label {
+    font-size: 11px;
+    line-height: 1.07143;
+    color: #AAAAAA;
+    font-weight: 400;
+    margin: 16px 0 0 0; }
+.materialkit .help-block {
+    margin-top: 0;
+    font-size: 11px; }
+.materialkit .form-group {
+    padding-bottom: 7px;
+    margin: 27px 0 0 0; }
+.materialkit .form-group .form-control {
+    margin-bottom: 7px; }
+.materialkit .form-group .form-control::-moz-placeholder, .materialkit .form-group .form-control:-ms-input-placeholder, .materialkit .form-group .form-control::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit .form-group .checkbox label, .materialkit .form-group .radio label {
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit .form-group label {
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit .form-group label.control-label {
+    font-size: 11px;
+    line-height: 1.07143;
+    color: #AAAAAA;
+    font-weight: 400;
+    margin: 16px 0 0 0; }
+.materialkit .form-group .help-block {
+    margin-top: 0;
+    font-size: 11px; }
+.materialkit .form-group.label-floating label.control-label, .materialkit .form-group.label-placeholder label.control-label {
+    top: -7px;
+    font-size: 14px;
+    line-height: 1.42857; }
+.materialkit .form-group.label-static label.control-label {
+    top: -28px;
+    left: 0;
+    font-size: 11px;
+    line-height: 1.07143; }
+.materialkit .form-group.label-floating.is-focused label.control-label, .materialkit .form-group.label-floating:not(.is-empty) label.control-label, .materialkit .form-group.label-floating input.form-control:-webkit-autofill ~ label.control-label label.control-label {
+    top: -28px;
+    left: 0;
+    font-size: 11px;
+    line-height: 1.07143; }
+.materialkit .form-group.form-group-sm {
+    padding-bottom: 3px;
+    margin: 21px 0 0 0; }
+.materialkit .form-group.form-group-sm .form-control {
+    margin-bottom: 3px; }
+.materialkit .form-group.form-group-sm .form-control::-moz-placeholder, .materialkit .form-group.form-group-sm .form-control:-ms-input-placeholder, .materialkit .form-group.form-group-sm .form-control::-webkit-input-placeholder {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit .form-group.form-group-sm .checkbox label, .materialkit .form-group.form-group-sm .radio label {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit .form-group.form-group-sm label {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit .form-group.form-group-sm label.control-label {
+    font-size: 9px;
+    line-height: 1.125;
+    color: #AAAAAA;
+    font-weight: 400;
+    margin: 16px 0 0 0; }
+.materialkit .form-group.form-group-sm .help-block {
+    margin-top: 0;
+    font-size: 9px; }
+.materialkit .form-group.form-group-sm.label-floating label.control-label, .materialkit .form-group.form-group-sm.label-placeholder label.control-label {
+    top: -11px;
+    font-size: 11px;
+    line-height: 1.5; }
+.materialkit .form-group.form-group-sm.label-static label.control-label {
+    top: -25px;
+    left: 0;
+    font-size: 9px;
+    line-height: 1.125; }
+.materialkit .form-group.form-group-sm.label-floating.is-focused label.control-label, .materialkit .form-group.form-group-sm.label-floating:not(.is-empty) label.control-label, .materialkit .form-group.form-group-sm.label-floating input.form-control:-webkit-autofill ~ label.control-label label.control-label {
+    top: -25px;
+    left: 0;
+    font-size: 9px;
+    line-height: 1.125; }
+.materialkit .form-group.form-group-lg {
+    padding-bottom: 9px;
+    margin: 30px 0 0 0; }
+.materialkit .form-group.form-group-lg .form-control {
+    margin-bottom: 9px; }
+.materialkit .form-group.form-group-lg .form-control::-moz-placeholder, .materialkit .form-group.form-group-lg .form-control:-ms-input-placeholder, .materialkit .form-group.form-group-lg .form-control::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 1.33333;
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit .form-group.form-group-lg .checkbox label, .materialkit .form-group.form-group-lg .radio label {
+    font-size: 18px;
+    line-height: 1.33333;
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit .form-group.form-group-lg label {
+    font-size: 18px;
+    line-height: 1.33333;
+    color: #AAAAAA;
+    font-weight: 400; }
+.materialkit .form-group.form-group-lg label.control-label {
+    font-size: 14px;
+    line-height: 1.0;
+    color: #AAAAAA;
+    font-weight: 400;
+    margin: 16px 0 0 0; }
+.materialkit .form-group.form-group-lg .help-block {
+    margin-top: 0;
+    font-size: 14px; }
+.materialkit .form-group.form-group-lg.label-floating label.control-label, .materialkit .form-group.form-group-lg.label-placeholder label.control-label {
+    top: -5px;
+    font-size: 18px;
+    line-height: 1.33333; }
+.materialkit .form-group.form-group-lg.label-static label.control-label {
+    top: -32px;
+    left: 0;
+    font-size: 14px;
+    line-height: 1.0; }
+.materialkit .form-group.form-group-lg.label-floating.is-focused label.control-label, .materialkit .form-group.form-group-lg.label-floating:not(.is-empty) label.control-label, .materialkit .form-group.form-group-lg.label-floating input.form-control:-webkit-autofill ~ label.control-label label.control-label {
+    top: -32px;
+    left: 0;
+    font-size: 14px;
+    line-height: 1.0; }
+.materialkit select.form-control {
+    border: 0;
+    box-shadow: none;
+    border-radius: 0; }
+.materialkit .form-group.is-focused select.form-control {
+    box-shadow: none;
+    border-color: #D2D2D2; }
+.materialkit select.form-control[multiple], .materialkit .form-group.is-focused select.form-control[multiple] {
+    height: 85px; }
+.materialkit .input-group-btn .btn {
+    margin: 0 0 7px 0; }
+.materialkit .form-group.form-group-sm .input-group-btn .btn {
+    margin: 0 0 3px 0; }
+.materialkit .form-group.form-group-lg .input-group-btn .btn {
+    margin: 0 0 9px 0; }
+.materialkit .input-group .input-group-btn {
+    padding: 0 12px; }
+.materialkit .input-group .input-group-addon {
+    border: 0;
+    background: transparent;
+    padding: 12px 15px 0px; }
+.materialkit .form-group input[type=file] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100; }
+.materialkit .form-control-feedback {
+    opacity: 0; }
+.materialkit .has-success .form-control-feedback {
+    color: #4caf50;
+    opacity: 1; }
+.materialkit .has-error .form-control-feedback {
+    color: #f44336;
+    opacity: 1; }
+.materialkit .pagination > li > a, .materialkit .pagination > li > span {
+    border: 0;
+    border-radius: 30px !important;
+    transition: all .3s;
+    padding: 0px 11px;
+    margin: 0 3px;
+    min-width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: transparent; }
+.materialkit .pagination > li > a:hover, .materialkit .pagination > li > a:focus {
+    color: #999999; }
+.materialkit .pagination > li > span:hover, .materialkit .pagination > li > span:focus {
+    color: #999999; }
+.materialkit .pagination > .active > a, .materialkit .pagination > .active > span {
+    color: #999999; }
+.materialkit .pagination > .active > a {
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+    color: #FFFFFF;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
+.materialkit .pagination > .active > a:focus, .materialkit .pagination > .active > a:hover {
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+    color: #FFFFFF;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
+.materialkit .pagination > .active > span {
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+    color: #FFFFFF;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
+.materialkit .pagination > .active > span:focus, .materialkit .pagination > .active > span:hover {
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+    color: #FFFFFF;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
+.materialkit .pagination.pagination-info > .active > a {
+    background-color: #03a9f4;
+    border-color: #03a9f4; }
+.materialkit .pagination.pagination-info > .active > a:focus, .materialkit .pagination.pagination-info > .active > a:hover {
+    background-color: #03a9f4;
+    border-color: #03a9f4; }
+.materialkit .pagination.pagination-info > .active > span {
+    background-color: #03a9f4;
+    border-color: #03a9f4; }
+.materialkit .pagination.pagination-info > .active > span:focus, .materialkit .pagination.pagination-info > .active > span:hover {
+    background-color: #03a9f4;
+    border-color: #03a9f4; }
+.materialkit .pagination.pagination-success > .active > a {
+    background-color: #4caf50;
+    border-color: #4caf50; }
+.materialkit .pagination.pagination-success > .active > a:focus, .materialkit .pagination.pagination-success > .active > a:hover {
+    background-color: #4caf50;
+    border-color: #4caf50; }
+.materialkit .pagination.pagination-success > .active > span {
+    background-color: #4caf50;
+    border-color: #4caf50; }
+.materialkit .pagination.pagination-success > .active > span:focus, .materialkit .pagination.pagination-success > .active > span:hover {
+    background-color: #4caf50;
+    border-color: #4caf50; }
+.materialkit .pagination.pagination-warning > .active > a {
+    background-color: #fbc02d;
+    border-color: #fbc02d; }
+.materialkit .pagination.pagination-warning > .active > a:focus, .materialkit .pagination.pagination-warning > .active > a:hover {
+    background-color: #fbc02d;
+    border-color: #fbc02d; }
+.materialkit .pagination.pagination-warning > .active > span {
+    background-color: #fbc02d;
+    border-color: #fbc02d; }
+.materialkit .pagination.pagination-warning > .active > span:focus, .materialkit .pagination.pagination-warning > .active > span:hover {
+    background-color: #fbc02d;
+    border-color: #fbc02d; }
+.materialkit .pagination.pagination-danger > .active > a {
+    background-color: #f44336;
+    border-color: #f44336; }
+.materialkit .pagination.pagination-danger > .active > a:focus, .materialkit .pagination.pagination-danger > .active > a:hover {
+    background-color: #f44336;
+    border-color: #f44336; }
+.materialkit .pagination.pagination-danger > .active > span {
+    background-color: #f44336;
+    border-color: #f44336; }
+.materialkit .pagination.pagination-danger > .active > span:focus, .materialkit .pagination.pagination-danger > .active > span:hover {
+    background-color: #f44336;
+    border-color: #f44336; }
+.materialkit .label {
+    border-radius: 3px;
+    padding: 5px 12px;
+    text-transform: uppercase;
+    font-size: 10px; }
+.materialkit .nav-pills > li > a {
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 100px;
+    text-align: center;
+    color: #555555;
+    transition: all .3s; }
+.materialkit .nav-pills > li i {
+    display: block;
+    font-size: 30px;
+    padding: 15px 0; }
+.materialkit .nav-pills > li.active > a {
+    background-color: #9c27b0;
+    color: #FFFFFF;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+.materialkit .nav-pills > li.active > a:focus, .materialkit .nav-pills > li.active > a:hover {
+    background-color: #9c27b0;
+    color: #FFFFFF;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+.materialkit .nav-pills.nav-pills-info > li.active > a {
+    background-color: #03a9f4; }
+.materialkit .nav-pills.nav-pills-info > li.active > a:focus, .materialkit .nav-pills.nav-pills-info > li.active > a:hover {
+    background-color: #03a9f4; }
+.materialkit .nav-pills.nav-pills-success > li.active > a {
+    background-color: #4caf50; }
+.materialkit .nav-pills.nav-pills-success > li.active > a:focus, .materialkit .nav-pills.nav-pills-success > li.active > a:hover {
+    background-color: #4caf50; }
+.materialkit .nav-pills.nav-pills-warning > li.active > a {
+    background-color: #fbc02d; }
+.materialkit .nav-pills.nav-pills-warning > li.active > a:focus, .materialkit .nav-pills.nav-pills-warning > li.active > a:hover {
+    background-color: #fbc02d; }
+.materialkit .nav-pills.nav-pills-danger > li.active > a {
+    background-color: #f44336; }
+.materialkit .nav-pills.nav-pills-danger > li.active > a:focus, .materialkit .nav-pills.nav-pills-danger > li.active > a:hover {
+    background-color: #f44336; }
+.materialkit footer {
+    padding: 15px 0; }
+.materialkit footer ul {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none; }
+.materialkit footer ul li {
+    display: inline-block; }
+.materialkit footer ul li a {
+    color: inherit;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-decoration: none;
+    position: relative;
+    display: block; }
+.materialkit footer ul li a:hover {
+    text-decoration: none; }
+.materialkit footer .copyright {
+    padding: 15px 0; }
+.materialkit footer .copyright .material-icons {
+    font-size: 18px;
+    position: relative;
+    top: 3px; }
+.materialkit legend {
+    border-bottom: 0; }
+.materialkit .navbar {
+    background-color: #9c27b0;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0; }
+.materialkit .navbar .navbar-brand {
+    position: relative;
+    height: 50px;
+    line-height: 30px;
+    color: inherit;
+    padding: 10px 15px; }
+.materialkit .navbar .navbar-brand:hover, .materialkit .navbar .navbar-brand:focus {
+    color: inherit;
+    background-color: transparent; }
+.materialkit .navbar .navbar-text {
+    color: inherit;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+.materialkit .navbar .navbar-nav > li > a {
+    color: inherit;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 3px; }
+.materialkit .navbar .navbar-nav > li > a:hover, .materialkit .navbar .navbar-nav > li > a:focus {
+    color: inherit;
+    background-color: transparent; }
+.materialkit .navbar .navbar-nav > li > a .material-icons {
+    font-size: 20px;
+    margin-top: -3px;
+    margin-right: 3px;
+    margin: -3px 4px 0 4px; }
+.materialkit .navbar .navbar-nav > li > a .fa {
+    font-size: 20px;
+    margin-top: -3px;
+    margin-right: 3px;
+    margin: -3px 4px 0 4px;
+    top: 2px;
+    position: relative; }
+.materialkit .navbar .navbar-nav > li > .dropdown-menu {
+    margin-top: -20px; }
+.materialkit .navbar .navbar-nav > li.open > .dropdown-menu {
+    margin-top: 0; }
+.materialkit .navbar .navbar-nav > .active > a {
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.1); }
+.materialkit .navbar .navbar-nav > .active > a:hover, .materialkit .navbar .navbar-nav > .active > a:focus {
+    color: inherit;
+    background-color: rgba(255, 255, 255, 0.1); }
+.materialkit .navbar .navbar-nav > .disabled > a {
+    color: inherit;
+    background-color: transparent;
+    opacity: 0.9; }
+.materialkit .navbar .navbar-nav > .disabled > a:hover, .materialkit .navbar .navbar-nav > .disabled > a:focus {
+    color: inherit;
+    background-color: transparent;
+    opacity: 0.9; }
+.materialkit .navbar .navbar-toggle {
+    border: 0; }
+.materialkit .navbar .navbar-toggle:hover, .materialkit .navbar .navbar-toggle:focus {
+    background-color: transparent; }
+.materialkit .navbar .navbar-toggle .icon-bar {
+    background-color: inherit;
+    border: 1px solid; }
+.materialkit .navbar .navbar-default .navbar-toggle, .materialkit .navbar .navbar-inverse .navbar-toggle {
+    border-color: transparent; }
+.materialkit .navbar .navbar-collapse, .materialkit .navbar .navbar-form {
+    border-top: none;
+    box-shadow: none; }
+.materialkit .navbar .navbar-nav > .open > a {
+    background-color: transparent;
+    color: inherit; }
+.materialkit .navbar .navbar-nav > .open > a:hover, .materialkit .navbar .navbar-nav > .open > a:focus {
+    background-color: transparent;
+    color: inherit; }
+.materialkit .navbar .navbar-link {
+    color: inherit; }
+.materialkit .navbar .navbar-link:hover {
+    color: inherit; }
+.materialkit .navbar .btn {
+    margin-top: 0;
+    margin-bottom: 0; }
+.materialkit .navbar .btn-link {
+    color: inherit; }
+.materialkit .navbar .btn-link:hover, .materialkit .navbar .btn-link:focus {
+    color: inherit; }
+.materialkit .navbar .btn-link[disabled]:hover, .materialkit .navbar .btn-link[disabled]:focus {
+    color: inherit; }
+@media (max-width: 767px) {
+    .materialkit .navbar .navbar-nav .navbar-text {
+        color: inherit;
+        margin-top: 15px;
+        margin-bottom: 15px; }
+    .materialkit .navbar .navbar-nav .open .dropdown-menu > .dropdown-header {
+        border: 0;
+        color: inherit; }
+    .materialkit .navbar .navbar-nav .open .dropdown-menu .divider {
+        border-bottom: 1px solid;
+        opacity: 0.08; }
+    .materialkit .navbar .navbar-nav .open .dropdown-menu > li > a {
+        color: inherit; }
+    .materialkit .navbar .navbar-nav .open .dropdown-menu > li > a:hover, .materialkit .navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: inherit;
+        background-color: transparent; }
+    .materialkit .navbar .navbar-nav .open .dropdown-menu > .active > a {
+        color: inherit;
+        background-color: transparent; }
+    .materialkit .navbar .navbar-nav .open .dropdown-menu > .active > a:hover, .materialkit .navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: inherit;
+        background-color: transparent; }
+    .materialkit .navbar .navbar-nav .open .dropdown-menu > .disabled > a {
+        color: inherit;
+        background-color: transparent; }
+    .materialkit .navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover, .materialkit .navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: inherit;
+        background-color: transparent; } }
+.materialkit fieldset[disabled] .navbar .btn-link:hover, .materialkit fieldset[disabled] .navbar .btn-link:focus {
+    color: inherit; }
+.materialkit .navbar {
+    background-color: #9c27b0;
+    color: #ffffff; }
+.materialkit .navbar .navbar-form {
+    margin-top: 16px; }
+.materialkit .navbar .navbar-form .form-group {
+    margin: 0;
+    padding: 0; }
+.materialkit .navbar .navbar-form .form-group .material-input:before, .materialkit .navbar .navbar-form .form-group.is-focused .material-input:after {
+    background-color: inherit; }
+.materialkit .navbar .navbar-form .form-group .form-control {
+    border-color: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    height: 28px;
+    font-size: 14px;
+    line-height: 1.42857; }
+.materialkit .navbar .navbar-form .form-control {
+    border-color: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    height: 28px;
+    font-size: 14px;
+    line-height: 1.42857; }
+.materialkit .navbar.navbar-default {
+    background-color: #9c27b0;
+    color: #ffffff; }
+.materialkit .navbar .navbar-form .form-group input.form-control::-moz-placeholder, .materialkit .navbar .navbar-form input.form-control::-moz-placeholder {
+    color: #ffffff; }
+.materialkit .navbar.navbar-default .navbar-form .form-group input.form-control::-moz-placeholder, .materialkit .navbar.navbar-default .navbar-form input.form-control::-moz-placeholder {
+    color: #ffffff; }
+.materialkit .navbar .navbar-form .form-group input.form-control:-ms-input-placeholder, .materialkit .navbar .navbar-form input.form-control:-ms-input-placeholder {
+    color: #ffffff; }
+.materialkit .navbar.navbar-default .navbar-form .form-group input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-default .navbar-form input.form-control:-ms-input-placeholder {
+    color: #ffffff; }
+.materialkit .navbar .navbar-form .form-group input.form-control::-webkit-input-placeholder, .materialkit .navbar .navbar-form input.form-control::-webkit-input-placeholder {
+    color: #ffffff; }
+.materialkit .navbar.navbar-default .navbar-form .form-group input.form-control::-webkit-input-placeholder, .materialkit .navbar.navbar-default .navbar-form input.form-control::-webkit-input-placeholder {
+    color: #ffffff; }
+.materialkit .navbar .dropdown-menu, .materialkit .navbar.navbar-default .dropdown-menu {
+    border-radius: 3px !important; }
+.materialkit .navbar .dropdown-menu li > a:hover, .materialkit .navbar .dropdown-menu li > a:focus {
+    color: #FFFFFF;
+    background-color: #9c27b0; }
+.materialkit .navbar.navbar-default .dropdown-menu li > a:hover, .materialkit .navbar.navbar-default .dropdown-menu li > a:focus {
+    color: #FFFFFF;
+    background-color: #9c27b0; }
+.materialkit .navbar .dropdown-menu .active > a, .materialkit .navbar.navbar-default .dropdown-menu .active > a {
+    background-color: #9c27b0;
+    color: #ffffff; }
+.materialkit .navbar .dropdown-menu .active > a:hover, .materialkit .navbar .dropdown-menu .active > a:focus {
+    color: #ffffff; }
+.materialkit .navbar.navbar-default .dropdown-menu .active > a:hover, .materialkit .navbar.navbar-default .dropdown-menu .active > a:focus {
+    color: #ffffff; }
+.materialkit .navbar.navbar-inverse {
+    background-color: #3f51b5;
+    color: contrast-color(#3f51b5, #000000, #ffffff); }
+.materialkit .navbar.navbar-inverse .navbar-form .form-group input.form-control::-moz-placeholder, .materialkit .navbar.navbar-inverse .navbar-form input.form-control::-moz-placeholder, .materialkit .navbar.navbar-inverse .navbar-form .form-group input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-inverse .navbar-form input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-inverse .navbar-form .form-group input.form-control::-webkit-input-placeholder, .materialkit .navbar.navbar-inverse .navbar-form input.form-control::-webkit-input-placeholder {
+    color: contrast-color(#3f51b5, #000000, #ffffff); }
+.materialkit .navbar.navbar-inverse .dropdown-menu {
+    border-radius: 3px !important; }
+.materialkit .navbar.navbar-inverse .dropdown-menu li > a:hover, .materialkit .navbar.navbar-inverse .dropdown-menu li > a:focus {
+    color: #FFFFFF;
+    background-color: #3f51b5; }
+.materialkit .navbar.navbar-inverse .dropdown-menu .active > a {
+    background-color: #3f51b5;
+    color: contrast-color(#3f51b5, #000000, #ffffff); }
+.materialkit .navbar.navbar-inverse .dropdown-menu .active > a:hover, .materialkit .navbar.navbar-inverse .dropdown-menu .active > a:focus {
+    color: contrast-color(#3f51b5, #000000, #ffffff); }
+.materialkit .navbar.navbar-primary {
+    background-color: #9c27b0;
+    color: #ffffff; }
+.materialkit .navbar.navbar-primary .navbar-form .form-group input.form-control::-moz-placeholder, .materialkit .navbar.navbar-primary .navbar-form input.form-control::-moz-placeholder, .materialkit .navbar.navbar-primary .navbar-form .form-group input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-primary .navbar-form input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-primary .navbar-form .form-group input.form-control::-webkit-input-placeholder, .materialkit .navbar.navbar-primary .navbar-form input.form-control::-webkit-input-placeholder {
+    color: #ffffff; }
+.materialkit .navbar.navbar-primary .dropdown-menu {
+    border-radius: 3px !important; }
+.materialkit .navbar.navbar-primary .dropdown-menu li > a:hover, .materialkit .navbar.navbar-primary .dropdown-menu li > a:focus {
+    color: #FFFFFF;
+    background-color: #9c27b0; }
+.materialkit .navbar.navbar-primary .dropdown-menu .active > a {
+    background-color: #9c27b0;
+    color: #ffffff; }
+.materialkit .navbar.navbar-primary .dropdown-menu .active > a:hover, .materialkit .navbar.navbar-primary .dropdown-menu .active > a:focus {
+    color: #ffffff; }
+.materialkit .navbar.navbar-success {
+    background-color: #4caf50;
+    color: #ffffff; }
+.materialkit .navbar.navbar-success .navbar-form .form-group input.form-control::-moz-placeholder, .materialkit .navbar.navbar-success .navbar-form input.form-control::-moz-placeholder, .materialkit .navbar.navbar-success .navbar-form .form-group input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-success .navbar-form input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-success .navbar-form .form-group input.form-control::-webkit-input-placeholder, .materialkit .navbar.navbar-success .navbar-form input.form-control::-webkit-input-placeholder {
+    color: #ffffff; }
+.materialkit .navbar.navbar-success .dropdown-menu {
+    border-radius: 3px !important; }
+.materialkit .navbar.navbar-success .dropdown-menu li > a:hover, .materialkit .navbar.navbar-success .dropdown-menu li > a:focus {
+    color: #FFFFFF;
+    background-color: #4caf50; }
+.materialkit .navbar.navbar-success .dropdown-menu .active > a {
+    background-color: #4caf50;
+    color: #ffffff; }
+.materialkit .navbar.navbar-success .dropdown-menu .active > a:hover, .materialkit .navbar.navbar-success .dropdown-menu .active > a:focus {
+    color: #ffffff; }
+.materialkit .navbar.navbar-info {
+    background-color: #03a9f4;
+    color: #ffffff; }
+.materialkit .navbar.navbar-info .navbar-form .form-group input.form-control::-moz-placeholder, .materialkit .navbar.navbar-info .navbar-form input.form-control::-moz-placeholder, .materialkit .navbar.navbar-info .navbar-form .form-group input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-info .navbar-form input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-info .navbar-form .form-group input.form-control::-webkit-input-placeholder, .materialkit .navbar.navbar-info .navbar-form input.form-control::-webkit-input-placeholder {
+    color: #ffffff; }
+.materialkit .navbar.navbar-info .dropdown-menu {
+    border-radius: 3px !important; }
+.materialkit .navbar.navbar-info .dropdown-menu li > a:hover, .materialkit .navbar.navbar-info .dropdown-menu li > a:focus {
+    color: #FFFFFF;
+    background-color: #03a9f4; }
+.materialkit .navbar.navbar-info .dropdown-menu .active > a {
+    background-color: #03a9f4;
+    color: #ffffff; }
+.materialkit .navbar.navbar-info .dropdown-menu .active > a:hover, .materialkit .navbar.navbar-info .dropdown-menu .active > a:focus {
+    color: #ffffff; }
+.materialkit .navbar.navbar-warning {
+    background-color: #fbc02d;
+    color: #ffffff; }
+.materialkit .navbar.navbar-warning .navbar-form .form-group input.form-control::-moz-placeholder, .materialkit .navbar.navbar-warning .navbar-form input.form-control::-moz-placeholder, .materialkit .navbar.navbar-warning .navbar-form .form-group input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-warning .navbar-form input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-warning .navbar-form .form-group input.form-control::-webkit-input-placeholder, .materialkit .navbar.navbar-warning .navbar-form input.form-control::-webkit-input-placeholder {
+    color: #ffffff; }
+.materialkit .navbar.navbar-warning .dropdown-menu {
+    border-radius: 3px !important; }
+.materialkit .navbar.navbar-warning .dropdown-menu li > a:hover, .materialkit .navbar.navbar-warning .dropdown-menu li > a:focus {
+    color: #FFFFFF;
+    background-color: #fbc02d; }
+.materialkit .navbar.navbar-warning .dropdown-menu .active > a {
+    background-color: #fbc02d;
+    color: #ffffff; }
+.materialkit .navbar.navbar-warning .dropdown-menu .active > a:hover, .materialkit .navbar.navbar-warning .dropdown-menu .active > a:focus {
+    color: #ffffff; }
+.materialkit .navbar.navbar-danger {
+    background-color: #f44336;
+    color: #ffffff; }
+.materialkit .navbar.navbar-danger .navbar-form .form-group input.form-control::-moz-placeholder, .materialkit .navbar.navbar-danger .navbar-form input.form-control::-moz-placeholder, .materialkit .navbar.navbar-danger .navbar-form .form-group input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-danger .navbar-form input.form-control:-ms-input-placeholder, .materialkit .navbar.navbar-danger .navbar-form .form-group input.form-control::-webkit-input-placeholder, .materialkit .navbar.navbar-danger .navbar-form input.form-control::-webkit-input-placeholder {
+    color: #ffffff; }
+.materialkit .navbar.navbar-danger .dropdown-menu {
+    border-radius: 3px !important; }
+.materialkit .navbar.navbar-danger .dropdown-menu li > a:hover, .materialkit .navbar.navbar-danger .dropdown-menu li > a:focus {
+    color: #FFFFFF;
+    background-color: #f44336; }
+.materialkit .navbar.navbar-danger .dropdown-menu .active > a {
+    background-color: #f44336;
+    color: #ffffff; }
+.materialkit .navbar.navbar-danger .dropdown-menu .active > a:hover, .materialkit .navbar.navbar-danger .dropdown-menu .active > a:focus {
+    color: #ffffff; }
+.materialkit .navbar-inverse {
+    background-color: #3f51b5; }
+.materialkit .navbar.navbar-transparent {
+    background-color: transparent;
+    box-shadow: none; }
+.materialkit .navbar-fixed-top {
+    border-radius: 0; }
+@media (max-width: 1199px) {
+    .materialkit .navbar .navbar-brand {
+        height: 50px;
+        padding: 10px 15px; }
+    .materialkit .navbar .navbar-form {
+        margin-top: 10px; }
+    .materialkit .navbar .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px; } }
+.materialkit .navbar .alert {
+    border-radius: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    z-index: 3;
+    transition: all 0.3s; }
+.materialkit .dropdown-menu {
+    border: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    -webkit-transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    -ms-transition: all 150ms linear;
+    transition: all 150ms linear;
+    margin-top: -20px;
+    opacity: 0;
+    visibility: hidden;
+    display: block; }
+.materialkit .open .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 1px; }
+.materialkit .dropdown-menu .divider {
+    background-color: rgba(0, 0, 0, 0.12); }
+.materialkit .dropdown-menu li {
+    position: relative; }
+.materialkit .dropdown-menu li > a {
+    font-size: 13px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 2px;
+    -webkit-transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    -ms-transition: all 150ms linear;
+    transition: all 150ms linear; }
+.materialkit .dropdown-menu li > a:hover, .materialkit .dropdown-menu li > a:focus {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); }
+.materialkit .dropdown-menu li a:hover, .materialkit .dropdown-menu li a:focus, .materialkit .dropdown-menu li a:active {
+    background-color: #9c27b0;
+    color: #FFFFFF; }
+.materialkit .dropdown-menu .divider {
+    margin: 5px 0; }
+.materialkit .alert {
+    border: 0;
+    border-radius: 0;
+    padding: 20px 15px;
+    line-height: 20px;
+    background-color: white;
+    color: #ffffff; }
+.materialkit .alert b {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px; }
+.materialkit .alert.alert-default {
+    background-color: white;
+    color: #ffffff; }
+.materialkit .alert a, .materialkit .alert .alert-link {
+    color: #ffffff; }
+.materialkit .alert.alert-default a, .materialkit .alert.alert-default .alert-link {
+    color: #ffffff; }
+.materialkit .alert.alert-inverse {
+    background-color: #4558be;
+    color: contrast-color(#3f51b5, #000000, #ffffff); }
+.materialkit .alert.alert-inverse a, .materialkit .alert.alert-inverse .alert-link {
+    color: contrast-color(#3f51b5, #000000, #ffffff); }
+.materialkit .alert.alert-primary {
+    background-color: #a72abd;
+    color: #ffffff; }
+.materialkit .alert.alert-primary a, .materialkit .alert.alert-primary .alert-link {
+    color: #ffffff; }
+.materialkit .alert.alert-success {
+    background-color: #55b559;
+    color: #ffffff; }
+.materialkit .alert.alert-success a, .materialkit .alert.alert-success .alert-link {
+    color: #ffffff; }
+.materialkit .alert.alert-info {
+    background-color: #0ab1fc;
+    color: #ffffff; }
+.materialkit .alert.alert-info a, .materialkit .alert.alert-info .alert-link {
+    color: #ffffff; }
+.materialkit .alert.alert-warning {
+    background-color: #fbc53c;
+    color: #ffffff; }
+.materialkit .alert.alert-warning a, .materialkit .alert.alert-warning .alert-link {
+    color: #ffffff; }
+.materialkit .alert.alert-danger {
+    background-color: #f55145;
+    color: #ffffff; }
+.materialkit .alert.alert-danger a, .materialkit .alert.alert-danger .alert-link {
+    color: #ffffff; }
+.materialkit .alert-info, .materialkit .alert-danger, .materialkit .alert-warning, .materialkit .alert-success {
+    color: #ffffff; }
+.materialkit .alert-default a, .materialkit .alert-default .alert-link {
+    color: rgba(0, 0, 0, 0.87); }
+.materialkit .alert .alert-icon {
+    display: block;
+    float: left;
+    margin-right: 15px; }
+.materialkit .alert .alert-icon i {
+    margin-top: -7px;
+    top: 5px;
+    position: relative; }
+.materialkit .progress {
+    height: 4px;
+    border-radius: 0;
+    box-shadow: none;
+    background: #DDDDDD; }
+.materialkit .progress .progress-bar {
+    box-shadow: none;
+    background-color: #9c27b0; }
+.materialkit .progress .progress-bar.progress-bar-default {
+    background-color: #9c27b0; }
+.materialkit .progress .progress-bar.progress-bar-inverse {
+    background-color: #3f51b5; }
+.materialkit .progress .progress-bar.progress-bar-primary {
+    background-color: #9c27b0; }
+.materialkit .progress .progress-bar.progress-bar-success {
+    background-color: #4caf50; }
+.materialkit .progress .progress-bar.progress-bar-info {
+    background-color: #03a9f4; }
+.materialkit .progress .progress-bar.progress-bar-warning {
+    background-color: #fbc02d; }
+.materialkit .progress .progress-bar.progress-bar-danger {
+    background-color: #f44336; }
+.materialkit .progress.progress-line-primary {
+    background: rgba(156, 39, 176, 0.2); }
+.materialkit .progress.progress-line-info {
+    background: rgba(3, 169, 244, 0.2); }
+.materialkit .progress.progress-line-success {
+    background: rgba(76, 175, 80, 0.2); }
+.materialkit .progress.progress-line-warning {
+    background: rgba(251, 192, 45, 0.2); }
+.materialkit .progress.progress-line-danger {
+    background: rgba(244, 67, 54, 0.2); }
+.materialkit h1, .materialkit .h1 {
+    font-size: 3.8em;
+    line-height: 1.15em; }
+.materialkit h2, .materialkit .h2 {
+    font-size: 2.6em; }
+.materialkit h3, .materialkit .h3 {
+    font-size: 1.825em;
+    line-height: 1.4em;
+    margin: 20px 0 10px; }
+.materialkit h4, .materialkit .h4 {
+    font-size: 1.3em;
+    line-height: 1.4em; }
+.materialkit h5, .materialkit .h5 {
+    font-size: 1.25em;
+    line-height: 1.4em;
+    margin-bottom: 15px; }
+.materialkit h6, .materialkit .h6 {
+    font-size: 1em;
+    text-transform: uppercase; }
+.materialkit .text-warning {
+    color: #fbc02d; }
+.materialkit .text-primary {
+    color: #9c27b0; }
+.materialkit .text-danger {
+    color: #f44336; }
+.materialkit .text-success {
+    color: #4caf50; }
+.materialkit .text-info {
+    color: #03a9f4; }
+.materialkit .nav-tabs {
+    background: #9c27b0;
+    border: 0;
+    border-radius: 3px;
+    padding: 0 15px; }
+.materialkit .nav-tabs > li > a {
+    color: #FFFFFF;
+    border: 0;
+    margin: 0;
+    border-radius: 3px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: transparent;
+    border: 0 !important;
+    color: #FFFFFF !important;
+    font-weight: 500; }
+.materialkit .nav-tabs > li > a:hover {
+    background-color: transparent;
+    border: 0;
+    background-color: transparent;
+    border: 0 !important;
+    color: #FFFFFF !important;
+    font-weight: 500; }
+.materialkit .nav-tabs > li > a:focus {
+    background-color: transparent;
+    border: 0 !important;
+    color: #FFFFFF !important;
+    font-weight: 500; }
+.materialkit .nav-tabs > li.disabled > a {
+    color: rgba(255, 255, 255, 0.5); }
+.materialkit .nav-tabs > li.disabled > a:hover {
+    color: rgba(255, 255, 255, 0.5); }
+.materialkit .nav-tabs > li .material-icons {
+    margin: -1px 5px 0 0; }
+.materialkit .nav-tabs > li.active > a {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color .1s .2s; }
+.materialkit .nav-tabs > li.active > a:hover, .materialkit .nav-tabs > li.active > a:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color .1s .2s; }
+.materialkit .popover, .materialkit .tooltip-inner {
+    color: #555555;
+    line-height: 1.5em;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); }
+.materialkit .popover {
+    padding: 0;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+.materialkit .popover.left > .arrow, .materialkit .popover.right > .arrow, .materialkit .popover.top > .arrow, .materialkit .popover.bottom > .arrow {
+    border: none; }
+.materialkit .popover-title {
+    background-color: #FFFFFF;
+    border: none;
+    padding: 15px 15px 5px;
+    font-size: 1.3em; }
+.materialkit .popover-content {
+    padding: 10px 15px 15px;
+    line-height: 1.4; }
+.materialkit .tooltip {
+    opacity: 1; }
+.materialkit .tooltip.in {
+    opacity: 1; }
+.materialkit .tooltip.left .tooltip-arrow {
+    border-left-color: #FFFFFF; }
+.materialkit .tooltip.right .tooltip-arrow {
+    border-right-color: #FFFFFF; }
+.materialkit .tooltip.top .tooltip-arrow {
+    border-top-color: #FFFFFF; }
+.materialkit .tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #FFFFFF; }
+.materialkit .tooltip-inner {
+    padding: 10px 15px;
+    min-width: 130px; }
+.materialkit .carousel .carousel-control {
+    width: 50%; }
+.materialkit .carousel .carousel-control.left, .materialkit .carousel .carousel-control.right {
+    background-image: none; }
+.materialkit .carousel .carousel-control .material-icons, .materialkit .carousel .carousel-control .fa {
+    display: none; }
+.materialkit .carousel .left {
+    cursor: url("../img/arrow-left.png"), url("../img/arrow-left.cur"), default !important; }
+.materialkit .carousel .right {
+    cursor: url("../img/arrow-right.png"), url("../img/arrow-right.cur"), default !important; }
+.materialkit .carousel .carousel-indicators {
+    bottom: 5px; }
+.materialkit .carousel .carousel-indicators li, .materialkit .carousel .carousel-indicators .active {
+    margin: 11px 10px; }
+.materialkit .carousel .carousel-indicators li {
+    background: #FFFFFF;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px; }
+.materialkit .carousel .carousel-indicators .active {
+    margin-top: 10px;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
+.materialkit .carousel .carousel-caption {
+    padding-bottom: 45px; }
+.materialkit .carousel .carousel-caption .material-icons {
+    position: relative;
+    top: 5px; }
+.materialkit .card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+.materialkit .card .card-height-indicator {
+    margin-top: 100%; }
+.materialkit .card .card-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+.materialkit .card .card-image {
+    height: 60%;
+    position: relative;
+    overflow: hidden; }
+.materialkit .card .card-image img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    pointer-events: none; }
+.materialkit .card .card-image .card-image-headline {
+    position: absolute;
+    bottom: 16px;
+    left: 18px;
+    color: #fff;
+    font-size: 2em; }
+.materialkit .card .content {
+    padding: 15px; }
+.materialkit .card .card-body {
+    height: 30%;
+    padding: 18px; }
+.materialkit .card .card-footer {
+    height: 10%;
+    padding: 18px; }
+.materialkit .card .card-footer button, .materialkit .card .card-footer a {
+    margin: 0 !important;
+    position: relative;
+    bottom: 25px;
+    width: auto; }
+.materialkit .card .card-footer button:first-child, .materialkit .card .card-footer a:first-child {
+    left: -15px; }
+.materialkit .card .header {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    border-radius: 3px;
+    padding: 15px 0;
+    background-color: #FFFFFF; }
+.materialkit .card .header-primary {
+    background: linear-gradient(60deg, #ab47bc, #7b1fa2); }
+.materialkit .card .header-info {
+    background: linear-gradient(60deg, #29b6f6, #0288d1); }
+.materialkit .card .header-success {
+    background: linear-gradient(60deg, #66bb6a, #388e3c); }
+.materialkit .card .header-warning {
+    background: linear-gradient(60deg, #fdd835, #fbc02d); }
+.materialkit .card .header-danger {
+    background: linear-gradient(60deg, #ef5350, #d32f2f); }
+.materialkit .card [class*="header-"] {
+    color: #FFFFFF; }
+.materialkit .card-raised {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+.materialkit .card-signup .header {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -40px;
+    padding: 20px 0; }
+.materialkit .card-signup .text-divider {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center; }
+.materialkit .card-signup .content {
+    padding: 0px 30px 0px 10px; }
+.materialkit .card-signup .checkbox {
+    margin-top: 20px; }
+.materialkit .card-signup .checkbox label {
+    margin-left: 17px; }
+.materialkit .card-signup .checkbox .checkbox-material {
+    padding-right: 12px; }
+.materialkit .card-signup .social-line {
+    margin-top: 15px;
+    text-align: center; }
+.materialkit .card-signup .social-line .btn {
+    color: #FFFFFF;
+    margin-left: 5px;
+    margin-right: 5px; }
+.materialkit .card-nav-tabs {
+    margin-top: 45px; }
+.materialkit .card-nav-tabs .header {
+    margin-top: -30px; }
+.materialkit .card-nav-tabs .nav-tabs {
+    background: transparent; }
+.materialkit .card-plain {
+    background: transparent;
+    box-shadow: none; }
+.materialkit .card-plain .header {
+    margin-left: 0;
+    margin-right: 0; }
+.materialkit .card-plain .content {
+    padding-left: 0;
+    padding-right: 0; }
+.materialkit .modal-content {
+    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+    border-radius: 3px;
+    border: none; }
+.materialkit .modal-content .modal-header {
+    border-bottom: none;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 0;
+    padding-left: 24px; }
+.materialkit .modal-content .modal-body {
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px; }
+.materialkit .modal-content .modal-footer {
+    border-top: none;
+    padding: 7px; }
+.materialkit .modal-content .modal-footer button {
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: auto; }
+.materialkit .modal-content .modal-footer button.pull-left {
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    left: -5px; }
+.materialkit .modal-content .modal-footer button + button {
+    margin-bottom: 16px; }
+.materialkit .modal-content .modal-body + .modal-footer {
+    padding-top: 0; }
+.materialkit .modal-backdrop {
+    background: rgba(0, 0, 0, 0.3); }
+.materialkit .modal .modal-dialog {
+    margin-top: 100px; }
+.materialkit .modal .modal-header .close {
+    color: #555555; }
+.materialkit .modal .modal-header .close:hover, .materialkit .modal .modal-header .close:focus {
+    opacity: 1;
+    color: #555555; }
+.materialkit .panel {
+    border-radius: 2px;
+    border: 0;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12); }
+.materialkit .panel > .panel-heading, .materialkit .panel.panel-default > .panel-heading {
+    background-color: #eeeeee; }
+.materialkit .panel.panel-inverse > .panel-heading {
+    background-color: #3f51b5; }
+.materialkit .panel.panel-primary > .panel-heading {
+    background-color: #9c27b0; }
+.materialkit .panel.panel-success > .panel-heading {
+    background-color: #4caf50; }
+.materialkit .panel.panel-info > .panel-heading {
+    background-color: #03a9f4; }
+.materialkit .panel.panel-warning > .panel-heading {
+    background-color: #fbc02d; }
+.materialkit .panel.panel-danger > .panel-heading {
+    background-color: #f44336; }
+.materialkit [class*="panel-"] > .panel-heading {
+    color: #ffffff;
+    border: 0; }
+.materialkit .panel-default > .panel-heading, .materialkit .panel:not([class*="panel-"]) > .panel-heading {
+    color: rgba(0, 0, 0, 0.87); }
+.materialkit .panel-footer {
+    background-color: #eeeeee; }
+.materialkit hr.on-dark {
+    color: #1a1a1a; }
+.materialkit hr.on-light {
+    color: white; }
+@media (-webkit-min-device-pixel-ratio: 0.75), (min--moz-device-pixel-ratio: 0.75), (-o-device-pixel-ratio: 3 / 4), (min-device-pixel-ratio: 0.75), (min-resolution: 0.75dppx), (min-resolution: 120dpi) {
+    .materialkit hr {
+        height: 0.75px; } }
+@media (-webkit-min-device-pixel-ratio: 1), (min--moz-device-pixel-ratio: 1), (-o-device-pixel-ratio: 1), (min-device-pixel-ratio: 1), (min-resolution: 1dppx), (min-resolution: 160dpi) {
+    .materialkit hr {
+        height: 1px; } }
+@media (-webkit-min-device-pixel-ratio: 1.33), (min--moz-device-pixel-ratio: 1.33), (-o-device-pixel-ratio: 133 / 100), (min-device-pixel-ratio: 1.33), (min-resolution: 1.33dppx), (min-resolution: 213dpi) {
+    .materialkit hr {
+        height: 1.333px; } }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 240dpi) {
+    .materialkit hr {
+        height: 1.5px; } }
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-device-pixel-ratio: 2 / 1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 380dpi) {
+    .materialkit hr {
+        height: 2px; } }
+@media (-webkit-min-device-pixel-ratio: 3), (min--moz-device-pixel-ratio: 3), (-o-device-pixel-ratio: 3 / 1), (min-device-pixel-ratio: 3), (min-resolution: 3dppx), (min-resolution: 480dpi) {
+    .materialkit hr {
+        height: 3px; } }
+@media (-webkit-min-device-pixel-ratio: 4), (min--moz-device-pixel-ratio: 4), (-o-device-pixel-ratio: 4 / 1), (min-device-pixel-ratio: 3), (min-resolution: 4dppx), (min-resolution: 640dpi) {
+    .materialkit hr {
+        height: 4px; } }
+.materialkit .img-thumbnail {
+    border-radius: 16px; }
+.materialkit .img-raised {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+.materialkit * {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent; }
+.materialkit *:focus {
+    outline: 0; }
+.materialkit a:focus, .materialkit a:active {
+    outline: 0 !important; }
+.materialkit button:active, .materialkit button:focus, .materialkit button:hover, .materialkit button::-moz-focus-inner {
+    outline: 0 !important; }
+.materialkit input[type="reset"]::-moz-focus-inner, .materialkit input[type="button"]::-moz-focus-inner, .materialkit input[type="submit"]::-moz-focus-inner {
+    outline: 0 !important; }
+.materialkit select::-moz-focus-inner, .materialkit input[type="file"] > input[type="button"]::-moz-focus-inner {
+    outline: 0 !important; }
+.materialkit .section {
+    padding: 70px 0; }
+.materialkit .section-navbars {
+    padding-bottom: 0; }
+.materialkit .section-full-screen {
+    height: 100vh; }
+.materialkit .section-signup {
+    padding-top: 20vh; }
+.materialkit .noUi-target {
+    -webkit-touch-callout: none;
+    -ms-touch-action: none;
+    user-select: none;
+    box-sizing: border-box; }
+.materialkit .noUi-target * {
+    -webkit-touch-callout: none;
+    -ms-touch-action: none;
+    user-select: none;
+    box-sizing: border-box; }
+.materialkit .noUi-base {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+.materialkit .noUi-origin {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0; }
+.materialkit .noUi-handle {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box; }
+.materialkit .noUi-stacking .noUi-handle {
+    z-index: 10; }
+.materialkit .noUi-state-tap .noUi-origin {
+    transition: left 0.3s, top 0.3s; }
+.materialkit .noUi-state-drag * {
+    cursor: inherit !important; }
+.materialkit .noUi-horizontal {
+    height: 10px; }
+.materialkit .noUi-handle {
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    left: -10px;
+    top: -6px;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 0.2s ease-out;
+    border: 1px solid;
+    background: #FFFFFF;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+.materialkit .noUi-vertical .noUi-handle {
+    margin-left: 5px;
+    cursor: ns-resize; }
+.materialkit .noUi-horizontal.noUi-extended {
+    padding: 0 15px; }
+.materialkit .noUi-horizontal.noUi-extended .noUi-origin {
+    right: -15px; }
+.materialkit .noUi-background {
+    height: 2px;
+    margin: 20px 0; }
+.materialkit .noUi-origin {
+    margin: 0;
+    border-radius: 0;
+    height: 2px;
+    background: #c8c8c8; }
+.materialkit .noUi-origin[style^="left: 0"] .noUi-handle {
+    background-color: #fff;
+    border: 2px solid #c8c8c8; }
+.materialkit .noUi-origin[style^="left: 0"] .noUi-handle.noUi-active {
+    border-width: 1px; }
+.materialkit .noUi-target {
+    border-radius: 3px; }
+.materialkit .noUi-horizontal {
+    height: 2px;
+    margin: 15px 0; }
+.materialkit .noUi-vertical {
+    height: 100%;
+    width: 2px;
+    margin: 0 15px;
+    display: inline-block; }
+.materialkit .noUi-handle.noUi-active {
+    transform: scale3d(2, 2, 1); }
+.materialkit [disabled].noUi-slider {
+    opacity: 0.5; }
+.materialkit [disabled] .noUi-handle {
+    cursor: not-allowed; }
+.materialkit .slider {
+    background: #c8c8c8; }
+.materialkit .slider.noUi-connect {
+    background-color: #9c27b0; }
+.materialkit .slider .noUi-handle {
+    border-color: #9c27b0; }
+.materialkit .slider.slider-info .noUi-connect, .materialkit .slider.slider-info.noUi-connect {
+    background-color: #03a9f4; }
+.materialkit .slider.slider-info .noUi-handle {
+    border-color: #03a9f4; }
+.materialkit .slider.slider-success .noUi-connect, .materialkit .slider.slider-success.noUi-connect {
+    background-color: #4caf50; }
+.materialkit .slider.slider-success .noUi-handle {
+    border-color: #4caf50; }
+.materialkit .slider.slider-warning .noUi-connect, .materialkit .slider.slider-warning.noUi-connect {
+    background-color: #fbc02d; }
+.materialkit .slider.slider-warning .noUi-handle {
+    border-color: #fbc02d; }
+.materialkit .slider.slider-danger .noUi-connect, .materialkit .slider.slider-danger.noUi-connect {
+    background-color: #f44336; }
+.materialkit .slider.slider-danger .noUi-handle {
+    border-color: #f44336; }
+.materialkit .dropdownjs::after {
+    right: 5px;
+    top: 3px;
+    font-size: 25px;
+    position: absolute;
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    content: "\e5c5";
+    pointer-events: none;
+    color: #757575; }
+.materialkit .datepicker {
+    top: 0;
+    left: 0;
+    padding: 4px;
+    margin-top: 1px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+.materialkit .datepicker > div {
+    display: none; }
+.materialkit .datepicker table {
+    width: 100%;
+    margin: 0; }
+.materialkit .datepicker td, .materialkit .datepicker th {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+.materialkit .datepicker td {
+    text-align: center; }
+.materialkit .datepicker td p {
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 50%;
+    height: 29px;
+    line-height: 29px;
+    margin: 3px 0 8px;
+    width: 29px; }
+.materialkit .datepicker td :hover {
+    cursor: pointer; }
+.materialkit .datepicker th {
+    font-weight: 500; }
+.materialkit .datepicker th.switch-datepicker {
+    font-size: 1em; }
+.materialkit .datepicker .prev p, .materialkit .datepicker .next p {
+    font-size: 1.825em; }
+.materialkit .datepicker p:hover {
+    background: #eeeeee; }
+.materialkit .datepicker .day.disabled {
+    color: #eeeeee; }
+.materialkit .datepicker td.old, .materialkit .datepicker td.new {
+    color: #999999;
+    border-top: 0; }
+.materialkit .datepicker td.active p, .materialkit .datepicker td.active:hover p {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    background-color: #9c27b0; }
+.materialkit .datepicker td.primary p, .materialkit .datepicker td.primary:hover p {
+    background-color: #9c27b0; }
+.materialkit .datepicker td.info p, .materialkit .datepicker td.info:hover p {
+    background-color: #03a9f4; }
+.materialkit .datepicker td.success p, .materialkit .datepicker td.success:hover p {
+    background-color: #4caf50; }
+.materialkit .datepicker td.warning p, .materialkit .datepicker td.warning:hover p {
+    background-color: #fbc02d; }
+.materialkit .datepicker td.danger p, .materialkit .datepicker td.danger:hover p {
+    background-color: #f44336; }
+.materialkit .datepicker span {
+    display: block;
+    width: 55px;
+    height: 54px;
+    line-height: 54px;
+    float: left;
+    margin: 2px;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+.materialkit .datepicker span.old {
+    color: #999999; }
+.materialkit .datepicker span.active {
+    background-color: #9c27b0;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF; }
+.materialkit .datepicker span.active:focus, .materialkit .datepicker span.active:hover, .materialkit .datepicker span.active:active {
+    background-color: #9c27b0;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
+.materialkit .datepicker span:hover {
+    background-color: #EEEEEE; }
+.materialkit .datepicker span.primary {
+    background-color: #9c27b0; }
+.materialkit .datepicker span.primary:hover {
+    background-color: #9c27b0; }
+.materialkit .datepicker span.info {
+    background-color: #03a9f4; }
+.materialkit .datepicker span.info:hover {
+    background-color: #03a9f4; }
+.materialkit .datepicker span.success {
+    background-color: #4caf50; }
+.materialkit .datepicker span.success:hover {
+    background-color: #4caf50; }
+.materialkit .datepicker span.warning {
+    background-color: #fbc02d; }
+.materialkit .datepicker span.warning:hover {
+    background-color: #fbc02d; }
+.materialkit .datepicker span.danger {
+    background-color: #f44336; }
+.materialkit .datepicker span.danger:hover {
+    background-color: #f44336; }
+.materialkit .datepicker th.switch-datepicker {
+    width: 145px; }
+.materialkit .datepicker th.next, .materialkit .datepicker th.prev {
+    font-size: 21px; }
+.materialkit .datepicker thead tr:first-child th {
+    cursor: pointer; }
+.materialkit .datepicker thead tr:first-child th:hover {
+    background: #eeeeee; }
+.materialkit .datepicker.dropdown-menu {
+    border-radius: 3px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -o-transition: all 150ms linear;
+    -ms-transition: all 150ms linear;
+    transition: all 150ms linear;
+    margin-top: -20px;
+    opacity: 0;
+    visibility: hidden; }
+.materialkit .datepicker.dropdown-menu.open {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 1px; }
+.materialkit .datepicker .table-condensed > tbody > tr > td {
+    padding: 2px; }
+.materialkit .datepicker .table-condensed > thead > tr > th {
+    padding: 0; }
+.materialkit .input-append.date .add-on i, .materialkit .input-prepend.date .add-on i {
+    display: block;
+    cursor: pointer;
+    width: 16px;
+    height: 16px; }
+.materialkit .datepicker-months thead {
+    padding: 0 0 3px;
+    display: block; }
+.materialkit .withripple {
+    position: relative; }
+.materialkit .ripple-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: inherit;
+    pointer-events: none; }
+.materialkit .ripple {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+    border-radius: 100%;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1);
+    transform-origin: 50%;
+    opacity: 0;
+    pointer-events: none; }
+.materialkit .ripple.ripple-on {
+    transition: opacity 0.15s ease-in 0s, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+    opacity: 0.1; }
+.materialkit .ripple.ripple-out {
+    transition: opacity 0.1s linear 0s !important;
+    opacity: 0; }
+.materialkit .wrapper > .header {
+    min-height: 300px;
+    background-position: center center;
+    background-size: cover; }
+.materialkit .main {
+    background: #FFFFFF;
+    position: relative;
+    z-index: 3; }
+.materialkit .main-raised {
+    margin: -60px 30px 0px;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+.materialkit .title {
+    font-weight: 500;
+    color: #3C4858; }
+.materialkit h2.title {
+    margin-bottom: 30px; }
+.materialkit .description {
+    color: #999999; }
+.materialkit .header-filter {
+    position: relative; }
+.materialkit .header-filter:after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4); }
+.materialkit .header-filter .container {
+    z-index: 2;
+    position: relative; }
+.materialkit .gallery .image img {
+    width: 100%; }
+.materialkit .features {
+    padding: 80px 0 0; }
+.materialkit .features .feature {
+    max-width: 360px;
+    margin: 0 auto; }
+.materialkit .features .feature > i {
+    font-size: 60px; }
+.materialkit .features .feature h4 {
+    color: #3C4858;
+    margin: 30px 0 15px; }
+.materialkit .features .feature.feature-primary > i {
+    color: #9c27b0; }
+.materialkit .features .feature.feature-info > i {
+    color: #03a9f4; }
+.materialkit .features .feature.feature-success > i {
+    color: #4caf50; }
+.materialkit .features .feature.feature-warning > i {
+    color: #fbc02d; }
+.materialkit .features .feature.feature-danger > i {
+    color: #f44336; }
+.materialkit .team {
+    margin-top: 80px; }
+.materialkit .team .team-player .title {
+    margin: 30px auto; }
+.materialkit .team .team-player img {
+    max-width: 170px; }
+.materialkit .nav-align-center {
+    text-align: center; }
+.materialkit .nav-align-center .nav-pills {
+    display: inline-block; }
+.materialkit .navbar-absolute {
+    position: absolute;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1031; }
+.materialkit .index-page .wrapper > .header {
+    height: 90vh; }
+.materialkit .index-page .brand {
+    margin-top: 30vh;
+    color: #FFFFFF;
+    text-align: center; }
+.materialkit .index-page .brand h1 {
+    font-size: 4.8em;
+    font-weight: 600; }
+.materialkit .index-page .brand h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    max-width: 400px;
+    margin: 10px auto 0; }
+.materialkit .index-page .section-basic {
+    padding-top: 15px; }
+.materialkit .index-page .header-filter:after {
+    background: rgba(101, 47, 142, 0.64);
+    background: linear-gradient(45deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+    background: -moz-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%); }
+.materialkit .landing-page .header {
+    height: 100vh; }
+.materialkit .landing-page .header .container {
+    padding-top: 26vh;
+    color: #FFFFFF; }
+.materialkit .landing-page .header .share {
+    margin-top: 150px; }
+.materialkit .landing-page .header h1 {
+    font-weight: 600; }
+.materialkit .landing-page .header .title {
+    color: #FFFFFF; }
+.materialkit .landing-page .wrapper {
+    background: #CCCCCC; }
+.materialkit .profile-page .header {
+    height: 380px;
+    background-position: top center; }
+.materialkit .profile-page .profile {
+    text-align: center; }
+.materialkit .profile-page .profile img {
+    max-width: 160px;
+    margin: -80px auto 0; }
+.materialkit .profile-page .description {
+    margin: 30px auto 0;
+    max-width: 600px; }
+.materialkit .profile-page .profile-tabs {
+    margin-top: 60px; }
+.materialkit .profile-page .gallery {
+    margin-top: 45px;
+    padding-bottom: 50px; }
+.materialkit .profile-page .gallery img {
+    width: 100%;
+    margin-bottom: 30px; }
+.materialkit .signup-page .wrapper > .header {
+    min-height: 100vh; }
+.materialkit .signup-page .wrapper .card-signup {
+    margin: 160px 0 40px; }
+.materialkit .signup-page .footer .copyright, .materialkit .signup-page .footer a {
+    color: #FFFFFF; }
+.materialkit .landing-page .navbar-transparent, .materialkit .profile-page .navbar-transparent, .materialkit .signup-page .navbar-transparent, .materialkit .index-page .navbar-transparent {
+    padding-top: 25px; }
+@media (max-width: 768px) {
+    .materialkit .footer .copyright {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 0;
+        float: none !important;
+        width: 100%; }
+    .materialkit .navbar.navbar-transparent {
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 10px;
+        border-radius: 0; }
+    .materialkit .main-raised {
+        margin-left: 10px;
+        margin-right: 10px; } }
+
+/*# sourceMappingURL=material-kit.css.map */
+
+/*# sourceMappingURL=customized_materialkit.css.map */
